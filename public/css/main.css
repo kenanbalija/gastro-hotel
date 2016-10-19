@@ -1,0 +1,24 @@
+.mySlides {
+  display: none;
+  width: 1000px;
+}
+.left {
+  cursor:pointer;
+  float:left!important
+}
+.right {
+  cursor:pointer;
+  float:right!important
+}
+.badge {
+  background-color:#000;
+  color:#fff;display:
+  inline-block;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center;
+}
+
+.border {
+  border:1px solid #ccc!important
+}
