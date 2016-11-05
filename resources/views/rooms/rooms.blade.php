@@ -118,3 +118,36 @@
     </article>
   </section>
 @endsection
+@section('showcase-two')
+<section id="rooms">
+  <h3>NAJPOPULARNIJE SOBE</h3><span class="vertical-line">|</span><h3>MOST POPULAR</h3> 
+  <div class="row">
+    <article class="col-sm-12">
+      <div class="col-xs-12 col-md-6">
+        <div class="room-price"><h4 id="room-price-white">$115</h4>noć</div>
+        <img src="{{ asset('img/hotelroom.jpg') }}">
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <h4>Standardne Sobe</h4>
+        <div>Standardne sobe sadrze LCD TV, mini-bar te kupaonicu
+          sa besplatnim kozmetickim priborom i fenom.
+          Pomocni lezajevi i djecji kreveti dostupni su na zahtjev.
+        </div>
+      </div>
+    </article>
+    <article class="col-sm-12">
+      <div class="col-xs-12 col-md-6">
+        <div class="room-price"><h4>$125</h4>noć</div>
+        <img src="{{ asset('img/hotelroom.jpg') }}">
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <h4>Standardne Sobe</h4>
+        <div>Standardne sobe sadrze LCD TV, mini-bar te kupaonicu
+          sa besplatnim kozmetickim priborom i fenom.
+          Pomocni lezajevi i djecji kreveti dostupni su na zahtjev.
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+@endsection

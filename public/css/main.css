@@ -316,7 +316,7 @@ nav.navbar{
 }
 
 .carousel-inner  div:nth-child(1){
-  background: url('../img/hotel-restaurant.jpg') no-repeat;
+  background: url('../img/luxury.jpg') no-repeat;
   background-size:cover;
 }
 .carousel-inner  div:nth-child(2){
@@ -602,7 +602,7 @@ nav.navbar{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   background-image: url('../img/Hotel-Reception.jpg');
   -webkit-transform: translateZ(-999px) scale(1);
   transform: translateZ(-999px) scale(1);
@@ -624,6 +624,20 @@ nav.navbar{
 #connect-us-sub article div {
   padding: 10px;
 }
+
+#connect-us-sub article div a {
+  color: white;
+}
+#connect-us-sub article div a:hover {
+  color: white;
+  text-decoration: none;
+}
+#connect-us-sub article div a:focus {
+  color: white;
+}
+#connect-us-sub article div a:active {
+  color: white;
+}
 /*news section start*/
 
 
@@ -641,6 +655,10 @@ nav.navbar{
   font-weight: 700;
   position: relative;
   top:-3px;
+}
+
+#ciljane-grupe div {
+  min-height: 100px;
 }
 #news .row {
   padding: 0;
@@ -772,14 +790,14 @@ nav.navbar{
 }
 
 .footer-inner .row {
-  max-width: 600px;
+  max-width: 300px;
   padding-top: 60px;
   margin:0 auto;
   text-align: center;
 }
 
 .footer-inner .row img {
-  width: 30px;
+  width: 24px;
 }
 .footer-copyright {
   background:url('../img/beach-bar.jpg');
@@ -862,7 +880,7 @@ nav.navbar{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   background-image: url('../img/pool-house.png');
   -webkit-transform: translateZ(-999px) scale(1);
   transform: translateZ(-999px) scale(1);
@@ -998,6 +1016,26 @@ nav.navbar{
     -webkit-transform: scale(1.1,1.1);
     transform: scale(1.1,1.1);
   border-radius: 3px;
+}
+#apartmants {
+  padding:0 30px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+#apartmants .row div {
+  margin-bottom: 10px;
+}
+#apartmants .row div a {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    width: 300px;
+
+}
+#apartmants .row div a img {
+  position: center;
+  height: 300px;
+   margin: auto
 }
 
 #oneAlbum {

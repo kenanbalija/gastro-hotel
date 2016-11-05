@@ -13,8 +13,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ekko-lightbox.min.css')}}">
+
 </head>
 <body id="app-layout">
     <div id="small-nav" class="navbar-fixed-top"  onclick="openNav()">&#9776; Home</div>
@@ -146,10 +147,10 @@
     <footer>
       <div class="footer-inner">
         <div class="row">
-          <div class="col-xs-3"><img src={{ asset('img/icons/facebook.ico') }}></div>
-          <div class="col-xs-3"><img src={{ asset('img/icons/instagram.ico') }}></div>
-          <div class="col-xs-3"><img src={{ asset('img/icons/twitter.ico') }}></div>
-          <div class="col-xs-3"><img src={{ asset('img/icons/google.ico') }}></div>
+          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/facebook.ico') }}></a></div>
+          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/instagram.ico') }}></a></div>
+          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/twitter.ico') }}></a></div>
+          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/google.ico') }}></a></div>
         </div>
       </div>
       <div class="footer-copyright">
@@ -160,7 +161,7 @@
       function initMap() {
         var uluru = {lat: 	40.730, lng: -73.935};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
+          zoom: 10,
           center: uluru
         });
         var marker = new google.maps.Marker({
@@ -175,6 +176,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-
+    <script src="{{ asset('js/ekko-lightbox.min.js') }}"></script>
 </body>
 </html>

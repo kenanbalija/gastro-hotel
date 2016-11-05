@@ -36,3 +36,8 @@ if(window.innerWidth>1080){
   function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
   }
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});

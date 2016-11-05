@@ -15,15 +15,15 @@
   <article id="contact-info">
     <section class=" col-xs-12 col-sm-4">
       <h4>ADDRESS:</h4>
-      <div><span>138 Atlantis LN</span><span>Kingsport</span><span>Illinois 121165</span></div>
+      <div><span>138 Sarajevo Ltn</span><span>Bosna i Hercegovina</span><span>Sarajevo 71000</span></div>
     </section>
     <section class="col-xs-12 col-sm-4">
       <h4>PHONES:</h4>
       <div><span>+387 62 746 478</span>+1 504 889 98 98<span></div>
     </section>
     <section class="col-xs-12 col-sm-4">
-      <h4>ADDRESS:</h4>
-      <div><span>mail@demolink.org</span></div>
+      <h4>E-MAIL:</h4>
+      <div><span>hotel@gastro.com</span></div>
     </section>
     <!-- <section class="col-xs-12">
       <h4>MISCELLANEOUS INFORMATION:</h4>

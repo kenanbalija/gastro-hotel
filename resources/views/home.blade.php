@@ -58,7 +58,7 @@
 <section class="carous-bg">
   <div class="carous-bg-inner">
     <div class="col-xs-12">
-      
+
     </div>
   </div>
 </section>
@@ -114,8 +114,8 @@
 @section('feature')
 <section id="offers">
   <div>
-    <h1 class="col-md-10">Month's getaway packages</h1>
-    <button class="btn-success col-md-2">See packages</button>
+    <a href="{{  url('/contact')  }}"><h1 class="col-md-12">Map of Area</h1></a>
+    <!-- <button class="btn-success col-md-2">See packages</button> -->
   </div>
 </section>
 @endsection
@@ -144,30 +144,51 @@
 <section id="connect-us-sub">
   <article class="row">
     <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="green-circle"><img src="{{ asset('img/icons/facebook.ico') }}"></div>
-      <div class="green-circle-sub">
-        <em>FACEBOOK</em>
-      </div>
+      <a href="#">
+        <div class="green-circle"><img src="{{ asset('img/icons/facebook.ico') }}"></div>
+        <div class="green-circle-sub">
+          <em>FACEBOOK</em>
+        </div>
+      </a>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="green-circle"><img src="{{ asset('img/icons/instagram.ico') }}"></div>
-      <div class="green-circle-sub">
-        <em>YOUTUBE</em>
-      </div>
+      <a href="#">
+        <div class="green-circle"><img src="{{ asset('img/icons/instagram.ico') }}"></div>
+        <div class="green-circle-sub">
+          <em>INSTAGRAM</em>
+        </div>
+      </a>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="green-circle"><img src="{{ asset('img/icons/twitter.ico') }}"></div>
-      <div class="green-circle-sub">
-        <em>INSTAGRAM</em>
-      </div>
+      <a href="#">
+        <div class="green-circle"><img src="{{ asset('img/icons/twitter.ico') }}"></div>
+        <div class="green-circle-sub">
+          <em>YOUTUBE</em>
+        </div>
+      </a>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3">
+      <a href="#">
       <div class="green-circle"><img src="{{ asset('img/icons/address-book.ico') }}"></div>
       <div class="green-circle-sub">
         <em>BOOKING</em>
       </div>
+    </a>
     </div>
   </article>
 </section>
 
+@endsection
+
+@section('feature-two')
+  <section id="news">
+    <h3>CILJANE GRUPE GOSTIJU</h3>
+    <div id="ciljane-grupe" class="row">
+      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/bliski-istok.png') }}"></div>
+      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/korisnici.png') }}"></div>
+      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/lokacija.png') }}"></div>
+      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/odmor.png') }}"></div>
+      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/zabave.png') }}"></div>
+    </div>
+  </section>
 @endsection

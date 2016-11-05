@@ -13,7 +13,7 @@
     </section>
     <article id="events" class="col-xs-12 col-sm-6">
       <div>
-        U mogucnosti ste organizovati sve vrste sastanaka i zabavnih dogadaja
+        U mogućnosti ste organizovati sve vrste sastanaka i zabavnih dogadaja
         privatnog i poslovnog karaktera pri cemu vam osoblje
         hotela stoji na raspolaganju da vam pruzi kvalitetnu uslugu i vrhunski provod.
         <ul>
