@@ -6,7 +6,7 @@
 @endsection
 @section('showcase')
 <section id="news">
-  <h3>SASTANCI I DOGADAJI</h3><span class="vertical-line">|</span><h3>MEETINGS & EVENTS</h3>
+  <!--<h3>SASTANCI I DOGADAJI</h3><span class="vertical-line">|</span>--><h3>MEETINGS & EVENTS</h3>
   <div class="row">
     <section id=events-img class="col-xs-12">
       <img src="{{ asset('img/wedding-room.jpg')}} ">

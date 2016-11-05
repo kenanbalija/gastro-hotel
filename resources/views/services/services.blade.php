@@ -6,7 +6,7 @@
 @endsection
 @section('showcase')
 <section id="news">
-  <h3>USLUGE ZA GOSTE</h3><span class="vertical-line">|</span><h3>GUEST SERVICE</h3>
+  <!--<h3>USLUGE ZA GOSTE</h3><span class="vertical-line">|</span>--><h3>GUEST SERVICE</h3>
   <div class="row">
     <article id="guest-services" class="col-xs-12 col-sm-6">
       <h4>Organizacija prijevoza od i do aerodroma</h4>

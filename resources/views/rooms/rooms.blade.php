@@ -6,7 +6,7 @@
 @endsection
 @section('showcase')
 <section id="rooms">
-  <h3>SOBE I APARTMANI</h3><span class="vertical-line">|</span><h3>ROOMS & APARTMENTS</h3>
+  <!-- <h3>SOBE I APARTMANI</h3><span class="vertical-line">|</span>--><h3>SOBE</h3> 
   <div class="row">
     <article class="col-sm-6">
       <div class="col-xs-12 col-md-6">
@@ -120,7 +120,7 @@
 @endsection
 @section('showcase-two')
 <section id="rooms">
-  <h3>NAJPOPULARNIJE SOBE</h3><span class="vertical-line">|</span><h3>MOST POPULAR</h3> 
+  <h3>NAJPOPULARNIJE SOBE</h3><span class="vertical-line">|</span><h3>MOST POPULAR</h3>
   <div class="row">
     <article class="col-sm-12">
       <div class="col-xs-12 col-md-6">

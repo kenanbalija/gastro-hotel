@@ -1,4 +1,3 @@
-
 body {
   background-color: #F7F7F7;
   scroll-behavior: smooth;
@@ -1122,6 +1121,13 @@ nav.navbar{
 @media screen and (max-width:560px) {
   #offers div h1 {
     font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  #ciljane-grupe div img {
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 990px) {
