@@ -7,6 +7,10 @@ body {
   color: #777777;
   background-color: #f7f7f7;
 }
+a{
+  color: inherit;
+  cursor: pointer;
+}
 /*home page mainly*/
 /*navigation css start*/
 
@@ -18,9 +22,15 @@ body {
   font-size: 22px;
   color: black;
   text-align: left;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-left: 30px;
   font-family: sans-serif;
+  color: rgb(152,134,113);
+}
+
+#small-nav img {
+  height: 50px;
+  margin-right: 10px;
 }
 
 
@@ -47,13 +57,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-bottom: 10px;
     text-decoration: none;
     font-size: 15px;
-    color: rgb(27, 188, 155);
+    color: rgb(152,134,113);
     display: block;
     transition: 0.3s
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: rgb(27, 188, 155);
+    color: rgb(152,134,113);
 }
 
 .sidenav .closebtn {
@@ -102,10 +112,22 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   color: azure;
   text-align: left;
   max-width: 1132px;
-  height: 400px;
+  height: 180px;
   background: rgba(0,0,0, 0.5);
   margin: 0 auto;
   padding: 10px 50px;
+  text-align: center;
+}
+#aboutDiv .row div {
+  margin-top: 50px;
+
+}
+#aboutDiv .row div a {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: azure;
+  cursor: pointer;
 }
 #searchDiv {
   color: azure;
@@ -286,19 +308,17 @@ nav.navbar{
 }
 .carous-bg {
   position: relative;
-  top:-136px;
+  top:-100px;
   padding: 0;
-  margin:0;
-    height: 136px;
+  margin:0;d
+    height: 100px;
     z-index: 14;
-    background-color: rgba(152,134,113,0.6);
 }
 
 .carous-bg-inner {
   color: azure;
   max-width: 1132px;
-  background-color: rgba(152,134,113,1);
-  height: 136px;
+  height: 100px;
   position: relative;
   margin: 0 auto;
 }
@@ -315,41 +335,46 @@ nav.navbar{
 }
 
 .carousel-inner  div:nth-child(1){
-  background: url('../img/luxury.jpg') no-repeat;
+  background: url('../img/Hotel-11.jpg') no-repeat;
   background-size:cover;
 }
 .carousel-inner  div:nth-child(2){
-  background: url('../img/depadans.jpg') no-repeat;
+  background: url('../img/Hotel-26.jpg') no-repeat;
   background-size:cover;
 
 }
 .carousel-inner  div:nth-child(3){
-  background: url('../img/hotel-room.jpg') no-repeat;
+  background: url('../img/Hotel-35.jpg') no-repeat;
   background-size:cover;
 
 }
 .carousel-inner  div:nth-child(4){
-  background: url('../img/court.jpg') no-repeat;
+  background: url('../img/Hotel-57.jpg') no-repeat;
   background-size:cover;
 
 }
 .carousel-inner  div:nth-child(5){
-  background: url('../img/presedential-bedroom.jpg') no-repeat;
+  background: url('../img/Hotel-74.jpg') no-repeat;
   background-size:cover;
 
 }
 .carousel-inner  div:nth-child(6){
-  background: url('../img/buffet.jpg') no-repeat;
+  background: url('../img/Hotel-84.jpg') no-repeat;
   background-size:cover;
 
 }
 .carousel-inner  div:nth-child(7){
-  background: url('../img/hotel-room.jpg') no-repeat;
+  background: url('../img/Hotel-95.jpg') no-repeat;
   background-size:cover;
 
 }
 .carousel-inner  div:nth-child(8){
-  background: url('../img/reception.jpg') no-repeat;
+  background: url('../img/Hotel-100.jpg') no-repeat;
+  background-size:cover;
+
+}
+.carousel-inner  div:nth-child(9){
+  background: url('../img/Hotel-142.jpg') no-repeat;
   background-size:cover;
 
 }
@@ -417,7 +442,7 @@ nav.navbar{
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  background-image: url('../img/Hotel-Reception.jpg');
+  background-image: url('../img/Hotel-95.jpg');
   -webkit-transform: translateZ(-999px) scale(1);
   transform: translateZ(-999px) scale(1);
   z-index: -3;
@@ -494,13 +519,12 @@ nav.navbar{
   padding: 0;
   margin-top: 30px;
 }
-#rooms .row article div:nth-child(1){
-  padding: 0;
-}
-#rooms .row article div img {
+
+#rooms .row article div div img {
   width: 100%;
   padding:0;
 }
+
 #rooms .vertical-line {
   margin: 0 20px;
   position: relative;
@@ -508,29 +532,39 @@ nav.navbar{
   font-weight: lighter;
   font-size: 30px;
 }
-#rooms .row article div:nth-child(2){
-  padding-top: 20px;
+#rooms .row article div{
+  min-height: 341px;
+  padding: 0;
   background-color: white;
-  min-height: 140px;
 }
-#rooms div article {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#rooms .row article  div h4 {
+#rooms .row article div h4{
   color: black;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+#rooms .row article div div{
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+#stnd-rooms {
+  min-height: 400px;
+  background: url('../img/Hotel-142.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-
-
-.room-price {
-  color: black;
-  background-color: rgba(27, 188, 155, 0.8);
-  width:70px;
-  text-align: center;
-  position: absolute;
-  right: 5%;
+#sup-rooms {
+  min-height: 400px;
+  background: url('../img/Hotel-148.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#dlx-rooms {
+  min-height: 400px;
+  background: url('../img/Hotel-132.jpg');
+  background-size: cover;
+  background-position: center;
 }
 /*rooms section end*/
 /*booking section */
@@ -584,13 +618,14 @@ nav.navbar{
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  background-image: url('../img/Hotel-Reception.jpg');
+  background-image: url('../img/Hotel-95.jpg');
   -webkit-transform: translateZ(-999px) scale(1);
   transform: translateZ(-999px) scale(1);
   padding-top: 50px;
 }
 
 #connect-us article h1 {
+  text-shadow: 0 0 10px black;
   color: azure;
   font-weight: 900;
 }
@@ -602,7 +637,7 @@ nav.navbar{
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto 50px;
-  background-image: url('../img/Hotel-Reception.jpg');
+  background-image: url('../img/Hotel-95.jpg');
   -webkit-transform: translateZ(-999px) scale(1);
   transform: translateZ(-999px) scale(1);
   z-index: -3;
@@ -617,7 +652,9 @@ nav.navbar{
 }
 
 #connect-us-sub article {
-  max-width: 1132px;
+  text-shadow: 0 0 10px black;
+  max-width: 800px;
+  padding-left: 100px;
   margin: 0 auto;
 }
 #connect-us-sub article div {
@@ -659,6 +696,15 @@ nav.navbar{
 #ciljane-grupe div {
   min-height: 100px;
 }
+#ciljane-grupe ul {
+  list-style-type: none;
+  padding: 0;
+}
+#ciljane-grupe ul li {
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
 #news .row {
   padding: 0;
   margin-top: 30px;
@@ -669,35 +715,51 @@ nav.navbar{
 }
 #events {
   background-color: white;
-  min-height: 200px;
+  min-height: 370px;
   line-height: 23px;
   padding: 20px;
   letter-spacing: 1px;
 }
 #events div ul {
-  margin-top: 30px;
-  list-style-type: disc;
-}
-#events-img{
+  margin-top: 50px;
+  list-style-type: none;
   padding: 0;
+  text-align: center;
 }
-#events-img  img{
-  margin: 0;
-  padding: 0;
-  width: 100%;
+#events div ul li {
+  font-size: 17px;
+  margin-top: 15px;
 }
+#events div ul li a{
+    text-decoration: none;
+    color: inherit
+}
+
+
 
 #guest-services {
   background-color: white;
-  min-height:370px;
+  min-height: 370px;
   line-height: 23px;
   padding: 20px;
   letter-spacing: 1px;
 }
 #guest-services div ul {
-  margin-top: 30px;
-  list-style-type: disc;
+  margin-top: 50px;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
+#guest-services div ul li {
+  font-size: 17px;
+  margin-top: 15px;
+}
+#guest-services div ul li a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 #news .vertical-line {
   margin: 0 20px;
   position: relative;
@@ -862,7 +924,7 @@ nav.navbar{
 }
 /*about page whole css*/
 #extra-bg {
-  background-image: url('../img/pool-house.png');
+  background-image: url('../img/Hotel-39.jpg');
   position: relative;
   height: 136px;
   margin-bottom:56px;
@@ -879,8 +941,8 @@ nav.navbar{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto 50px;
-  background-image: url('../img/pool-house.png');
+  margin: 0 auto;
+  background-image: url('../img/Hotel-39.jpg');
   -webkit-transform: translateZ(-999px) scale(1);
   transform: translateZ(-999px) scale(1);
   z-index: -3;
@@ -888,6 +950,7 @@ nav.navbar{
 }
 #lifestyle-budget .row {
   text-align: center;
+  text-shadow: 0 0 10px black;
   max-width: 1132px;
   margin: 0 auto;
 }
@@ -992,6 +1055,9 @@ nav.navbar{
   padding: 0;
   margin: 30px auto;
 }
+#photos .row div span {
+  letter-spacing: 1px;
+}
 
 #photos .vertical-line {
   margin: 0 20px;
@@ -1002,7 +1068,7 @@ nav.navbar{
 }
 
 #photos .row div {
-  min-height: 200px;
+  min-height: 250px;
   padding: 10px;
 }
 #photos .row div div {
@@ -1016,45 +1082,36 @@ nav.navbar{
     transform: scale(1.1,1.1);
   border-radius: 3px;
 }
-#apartmants {
-  padding:0 30px;
-  margin-top: 50px;
-  margin-bottom: 200px;
-}
 #apartmants .row div {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
+
 #apartmants .row div a {
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-    width: 300px;
+  width:  100%;
+  height: 100%;
+}
+#apartmants .row div a div {
+  max-height: 222px;
+  overflow: hidden;
 
 }
-#apartmants .row div a img {
+#apartmants .row div a div img {
   position: center;
-  height: 300px;
-   margin: auto
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
 }
 
 #oneAlbum {
-  background: url('../img/hotels/1.jpg');
+  background: url('../img/hotels/apartments/Hotel-104.jpg');
   background-size: cover;
 }
 #twoAlbum {
-  background: url('../img/hotels/2.jpg');
+  background: url('../img/hotels/restaurants/Hotel-96.jpg');
   background-size: cover;
 }#thrAlbum {
-  background: url('../img/hotels/3.jpg');
-  background-size: cover;
-}#fouAlbum {
-  background: url('../img/hotels/4.jpg');
-  background-size: cover;
-}#fivAlbum {
-  background: url('../img/hotels/5.jpg');
-  background-size: cover;
-}#sixAlbum {
-  background: url('../img/hotels/6.jpg');
+  background: url('../img/hotels/exterior/Hotel-85.jpg');
   background-size: cover;
 }
 
@@ -1081,7 +1138,7 @@ nav.navbar{
 }
 @media screen and (max-width: 993px) {
   .navbar-default .navbar-nav>li>a {
-    letter-spacing: 1px;
+    letter-spacing: 0;
     color: azure;
   }
 }
@@ -1104,9 +1161,7 @@ nav.navbar{
   .carousel-inner {
     height: 650px;
   }
-  .carousel-indicators {
-    bottom: -130px;
-  }
+
 }
 @media screen and (max-width: 768px) {
 
@@ -1125,11 +1180,6 @@ nav.navbar{
 
 }
 
-@media screen and (max-width: 400px) {
-  #ciljane-grupe div img {
-    max-width: 300px;
-  }
-}
 @media screen and (max-width: 990px) {
   .green-circle {
     display: inline-block;

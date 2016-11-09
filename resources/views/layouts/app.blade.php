@@ -18,14 +18,17 @@
 
 </head>
 <body id="app-layout">
-    <div id="small-nav" class="navbar-fixed-top"  onclick="openNav()">&#9776; Home</div>
+    <div id="small-nav" class="navbar-fixed-top"  onclick="openNav()">
+      <img src="{{ asset('img/gh-logo.png')}}">
+      <span>&#9776; Home</span>
+    </div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="{{ url('/') }}">Home</a>
-        <a href="{{ url('/rooms') }}">Rooms</a>
-        <a href="{{ url('/events') }}">Events</a>
-        <a href="{{ url('/services') }}">Services</a>
-        <a href="{{ url('/contact') }}">Contact</a>
+        <a href="{{ url('/') }}">Početna</a>
+        <a href="{{ url('/rooms') }}">Sobe</a>
+        <a href="{{ url('/events') }}">Zbivanja</a>
+        <a href="{{ url('/services') }}">Usluge</a>
+        <a href="{{ url('/contact') }}">Kontakt</a>
 
     </div>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -46,14 +49,14 @@
                   <ul class="nav navbar-nav row">
                       <li class="dropdown">
                         <a href="{{ url('/home')}}">
-                          <button type="button" value="hide/show" class="homeButton" >Home</button><span class="caret"></span>
+                          <button type="button" value="hide/show" class="homeButton" >Početna</button><span class="caret"></span>
                         </a>
                       </li>
-                      <li><a href="{{ url('/rooms') }}">Rooms</a></li>
-                      <li><a href="{{ url('/photos') }}">Photos</a></li>
-                      <li><a href="{{ url('/events') }}">Events</a></li>
-                      <li><a href="{{ url('/services') }}">Services</a></li>
-                      <li><a href="{{ url('/contact') }}">Contact</a></li>
+                      <li><a href="{{ url('/rooms') }}">Sobe</a></li>
+                      <li><a href="{{ url('/photos') }}">Fotografije</a></li>
+                      <li><a href="{{ url('/events') }}">Zbivanja</a></li>
+                      <li><a href="{{ url('/services') }}">Usluge</a></li>
+                      <li><a href="{{ url('/contact') }}">Kontakt</a></li>
                   </ul>
 
                   <!-- Right Side Of Navbar -->
@@ -90,39 +93,19 @@
         <div id="aboutContainer"  class="container">
           <div id="aboutDiv">
             <div class="row">
-              <div class="col-xs-2">
-                Duisautem<br/>
-                Nam liber<br/>
-                Sautem
+              <div class="col-xs-3">
+                <a>O Hotelu</a>
               </div>
-              <div class="col-xs-2">
-                Duisautem<br/>
-                Nam liber<br/>
-                Sautem
+              <div class="col-xs-3">
+                <a>Rezervacija</a>
               </div>
-              <div class="col-xs-2">
-                Duisautem<br/>
-                Nam liber<br/>
-                Sautem
+              <div class="col-xs-3">
+                <a>Povežimo se</a>
               </div>
-              <div class="col-xs-2">
-                Duisautem<br/>
-                Nam liber<br/>
-                Sautem
-              </div>
-              <div class="col-xs-2">
-                Duisautem<br/>
-                Nam liber<br/>
-                Sautem
-              </div>
-              <div class="col-xs-2">
-                Duisautem<br/>
-                Nam liber<br/>
-                Sautem
+              <div class="col-xs-3">
+                <a>Sadržaj</a>
               </div>
             </div>
-            <div class="aboutImg"></div>
-
           </div>
         </div>
     </nav>
@@ -147,10 +130,10 @@
     <footer>
       <div class="footer-inner">
         <div class="row">
-          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/facebook.ico') }}></a></div>
-          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/instagram.ico') }}></a></div>
-          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/twitter.ico') }}></a></div>
-          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/google.ico') }}></a></div>
+          <div class="col-xs-4"><a href="#"><img src={{ asset('img/icons/facebook.ico') }}></a></div>
+          <div class="col-xs-4"><a href="#"><img src={{ asset('img/icons/instagram.ico') }}></a></div>
+          <div class="col-xs-4"><a href="#"><img src={{ asset('img/icons/twitter.ico') }}></a></div>
+          <!-- <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/google.ico') }}></a></div> -->
         </div>
       </div>
       <div class="footer-copyright">
@@ -159,9 +142,9 @@
     </footer>
     <script>
       function initMap() {
-        var uluru = {lat: 	40.730, lng: -73.935};
+        var uluru = {lat: 	43.836000, lng: 18.320320};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
+          zoom: 18,
           center: uluru
         });
         var marker = new google.maps.Marker({

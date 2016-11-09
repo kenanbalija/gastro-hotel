@@ -6,12 +6,12 @@
 @endsection
 @section('showcase')
 <section id="rooms">
-  <!-- <h3>SOBE I APARTMANI</h3><span class="vertical-line">|</span>--><h3>SOBE</h3> 
+  <h3>SOBE I APARTMANI</h3>
   <div class="row">
-    <article class="col-sm-6">
+    <a href="{{ url('/rooms/standard') }}">
+      <article class="col-sm-12">
       <div class="col-xs-12 col-md-6">
-        <div class="room-price"><h4>$95</h4>noć</div>
-        <img src="{{ asset('img/hotelroom.jpg') }}">
+        <section id="stnd-rooms"></section>
       </div>
       <div class="col-xs-12 col-md-6">
         <h4>Standardne Sobe</h4>
@@ -21,9 +21,9 @@
         </div>
       </div>
     </article>
-    <article class="col-sm-6">
+  </a>
+    <!-- <article class="col-sm-6">
       <div class="col-xs-12 col-md-6">
-        <div class="room-price"><h4>$95</h4>per night</div>
         <img src="{{ asset('img/hotelroom.jpg') }}">
       </div>
       <div class="col-xs-12 col-md-6">
@@ -33,13 +33,13 @@
           Any type of extra bed or child's cot/crib is upon request.
         </div>
       </div>
-    </article>
+    </article> -->
   </div>
     <div class="row">
-    <article class="col-sm-6">
+      <a href="{{ url('/rooms/superior') }}">
+    <article class="col-sm-12">
       <div class="col-xs-12 col-md-6">
-        <div class="room-price"><h4>$95</h4>noć</div>
-        <img src="{{ asset('img/hotelroom.jpg') }}">
+        <section id="sup-rooms"></section>
       </div>
       <div class="col-xs-12 col-md-6">
         <h4>Superior apartman</h4>
@@ -52,12 +52,12 @@
         </div>
       </div>
     </article>
-    <article class="col-sm-6">
+  </a>
+    <!-- <article class="col-sm-6">
       <div class="col-xs-12 col-md-6">
-        <div class="room-price"><h4>$95</h4>per night</div>
         <img src="{{ asset('img/hotelroom.jpg') }}">
       </div>
-      <div class="col-xs-12 col-md-6">
+       <div class="col-xs-12 col-md-6">
         <h4>Superior Apartment</h4>
         <div>Air-conditioned suite featuring an LCD
            satellite TV, a seating area with a sofa bed,
@@ -67,28 +67,28 @@
              kitchenette. This room features a massage chair.
         </div>
       </div>
-    </article>
+    </article> -->
   </div>
 
   <div class="row">
-  <article class="col-sm-6">
-    <div class="col-xs-12 col-md-6">
-      <div class="room-price"><h4>$95</h4>noć</div>
-      <img src="{{ asset('img/hotelroom.jpg') }}">
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <h4>Deluxe apartman</h4>
-      <div>a.	Ovaj elegantno uređeni suite uključuje klima-uređaj,
-         LCD TV sa satelitskim programima, DVD uređaj i
-          prostrani dnevni boravak s kaminom. Potpuno opremljena
-           kuhinja ima blagovaonicu. U kupaonici su na raspolaganju tuš,
-        sušilo za kosu i besplatni kozmetički pribor.
+  <a href="{{ url('/rooms/deluxe') }}">
+    <article class="col-sm-12">
+      <div class="col-xs-12 col-md-6">
+        <section id="dlx-rooms"></section>
       </div>
-    </div>
-  </article>
-  <article class="col-sm-6">
+      <div class="col-xs-12 col-md-6">
+        <h4>Deluxe apartman</h4>
+        <div>Ovaj elegantno uređeni suite uključuje klima-uređaj,
+           LCD TV sa satelitskim programima, DVD uređaj i
+            prostrani dnevni boravak s kaminom. Potpuno opremljena
+             kuhinja ima blagovaonicu. U kupaonici su na raspolaganju tuš,
+          sušilo za kosu i besplatni kozmetički pribor.
+        </div>
+      </div>
+    </article>
+  </a>
+  <!-- <article class="col-sm-6">
     <div class="col-xs-12 col-md-6">
-      <div class="room-price"><h4>$95</h4>per night</div>
       <img src="{{ asset('img/hotelroom.jpg') }}">
     </div>
     <div class="col-xs-12 col-md-6">
@@ -100,7 +100,7 @@
         includes a shower, hairdryer and free toiletries.
       </div>
     </div>
-  </article>
+  </article> -->
 </div>
 </section>
 @endsection
@@ -117,37 +117,4 @@
       </div>
     </article>
   </section>
-@endsection
-@section('showcase-two')
-<section id="rooms">
-  <h3>NAJPOPULARNIJE SOBE</h3><span class="vertical-line">|</span><h3>MOST POPULAR</h3>
-  <div class="row">
-    <article class="col-sm-12">
-      <div class="col-xs-12 col-md-6">
-        <div class="room-price"><h4 id="room-price-white">$115</h4>noć</div>
-        <img src="{{ asset('img/hotelroom.jpg') }}">
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <h4>Standardne Sobe</h4>
-        <div>Standardne sobe sadrze LCD TV, mini-bar te kupaonicu
-          sa besplatnim kozmetickim priborom i fenom.
-          Pomocni lezajevi i djecji kreveti dostupni su na zahtjev.
-        </div>
-      </div>
-    </article>
-    <article class="col-sm-12">
-      <div class="col-xs-12 col-md-6">
-        <div class="room-price"><h4>$125</h4>noć</div>
-        <img src="{{ asset('img/hotelroom.jpg') }}">
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <h4>Standardne Sobe</h4>
-        <div>Standardne sobe sadrze LCD TV, mini-bar te kupaonicu
-          sa besplatnim kozmetickim priborom i fenom.
-          Pomocni lezajevi i djecji kreveti dostupni su na zahtjev.
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
 @endsection

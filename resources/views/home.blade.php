@@ -13,6 +13,8 @@
       <li data-target="#carousel-generic" data-slide-to="5"></li>
       <li data-target="#carousel-generic" data-slide-to="6"></li>
       <li data-target="#carousel-generic" data-slide-to="7"></li>
+      <li data-target="#carousel-generic" data-slide-to="8"></li>
+
     </ol>
   <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -43,6 +45,10 @@
         <!-- <img class='col-xs-12' src="{{ asset('img/reception.jpg') }}" alt="..."> -->
 
       </div>
+      <div class="item col-xs-12">
+        <!-- <img class='col-xs-12' src="{{ asset('img/reception.jpg') }}" alt="..."> -->
+
+      </div>
     </div>
   <!-- Controls
   <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
@@ -67,12 +73,12 @@
 
 @section('showcase')
   <section id="welcome">
-    <h3>O HOTELU</h3><span class="vertical-line">|</span><h3>ABOUT OUR HOTEL</h3><span></span>
+    <h3>O HOTELU</h3>
       <div class="row">
-        <div class=" col-md-4 welcome-bg">
-          <img src="{{ asset('img/reception.jpg') }}">
+        <div class="col-xs-12 col-md-6 welcome-bg">
+          <img src="{{ asset('img/about-bg.jpg') }}">
         </div>
-        <div class="col-sm-6 col-md-4 intro-text">
+        <div class="col-xs-12 col-md-6 intro-text">
           Hotel by GastroID u Sarajevu ima dugogodišnju
           tradiciju pružanja izvanredne hotelske usluge
           gostima i posjetiocima. Hotel u ponudi ima 40
@@ -88,7 +94,7 @@
             Osoblje hotela će uraditi sve da gosti u potpunosti mogu uživati u
            svom boravku u Sarajevu.
         </div>
-        <div class="col-sm-6 col-md-4 intro-text">
+        <!-- <div class="col-sm-6 col-md-4 intro-text">
           Hotel by GastroID in Sarajevo has a long
           tradition of offering an exceptional guest
           service. Hotel has 40 elegantly decorated
@@ -105,7 +111,7 @@
           will ensure that the guests are completely taken care of and can
           fully enjoy their visit to Sarajevo.
 
-        </div>
+        </div> -->
       </div>
   </section>
 @endsection
@@ -114,7 +120,7 @@
 @section('feature')
 <section id="offers">
   <div>
-    <a href="{{  url('/contact')  }}"><h1 class="col-md-12">Map of Area</h1></a>
+    <a href="{{  url('/contact')  }}"><h1 class="col-md-12">Lokacija Hotela</h1></a>
     <!-- <button class="btn-success col-md-2">See packages</button> -->
   </div>
 </section>
@@ -138,12 +144,12 @@
 @section('showcase-two')
 <section id="connect-us">
   <article class="col-xs-12">
-    <h1>CONNECT WITH US</h1>
+    <h1>POVEŽIMO SE</h1>
   </article>
 </section>
 <section id="connect-us-sub">
   <article class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <a href="#">
         <div class="green-circle"><img src="{{ asset('img/icons/facebook.ico') }}"></div>
         <div class="green-circle-sub">
@@ -151,7 +157,7 @@
         </div>
       </a>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <a href="#">
         <div class="green-circle"><img src="{{ asset('img/icons/instagram.ico') }}"></div>
         <div class="green-circle-sub">
@@ -159,21 +165,13 @@
         </div>
       </a>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <a href="#">
-        <div class="green-circle"><img src="{{ asset('img/icons/twitter.ico') }}"></div>
+        <div class="green-circle"><img src="{{ asset('img/icons/youtube.ico') }}"></div>
         <div class="green-circle-sub">
           <em>YOUTUBE</em>
         </div>
       </a>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <a href="#">
-      <div class="green-circle"><img src="{{ asset('img/icons/address-book.ico') }}"></div>
-      <div class="green-circle-sub">
-        <em>BOOKING</em>
-      </div>
-    </a>
     </div>
   </article>
 </section>
@@ -182,13 +180,16 @@
 
 @section('feature-two')
   <section id="news">
-    <h3>CILJANE GRUPE GOSTIJU</h3>
+    <h3>SADRŽAJ</h3>
     <div id="ciljane-grupe" class="row">
-      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/bliski-istok.png') }}"></div>
-      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/korisnici.png') }}"></div>
-      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/lokacija.png') }}"></div>
-      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/odmor.png') }}"></div>
-      <div class="col-xs-12 col-sm-6"><img src="{{ asset('img/ciljane-grupe/zabave.png') }}"></div>
+      <ul>
+        <li class="col-xs-6 col-sm-4">Dječje igralište</li>
+        <li class="col-xs-6 col-sm-4">Parking</li>
+        <li class="col-xs-6 col-sm-4">Konferencijska sala</li>
+        <li class="col-xs-6 col-sm-4">Teniski tereni</li>
+        <li class="col-xs-6 col-sm-4">Prijevoz sa aerodroma</li>
+        <li class="col-xs-6 col-sm-4">Recepcija 24h</li>
+      </ul>
     </div>
   </section>
 @endsection

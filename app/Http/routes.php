@@ -18,6 +18,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/about', 'HomeController@about');
 Route::get('/rooms', 'HomeController@rooms');
 Route::get('/events', 'HomeController@events');
+
 Route::get('/photos', 'HomeController@photos');
 Route::get('/photos/apartmants', 'PhotoController@apartmants');
 Route::get('/photos/restaurants', 'PhotoController@restaurants');
@@ -25,3 +26,8 @@ Route::get('/photos/exterior', 'PhotoController@exterior');
 
 Route::get('/contact', 'HomeController@contact');
 Route::get('/services', 'HomeController@services');
+
+
+Route::get('/rooms/standard', 'RoomController@standard');
+Route::get('/rooms/superior', 'RoomController@superior');
+Route::get('/rooms/deluxe', 'RoomController@deluxe');

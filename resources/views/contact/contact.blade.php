@@ -14,16 +14,16 @@
   </article>
   <article id="contact-info">
     <section class=" col-xs-12 col-sm-4">
-      <h4>ADDRESS:</h4>
-      <div><span>138 Sarajevo Ltn</span><span>Bosna i Hercegovina</span><span>Sarajevo 71000</span></div>
+      <h4>ADRESA:</h4>
+      <div><span>Nike Kolumbića - Šake 78</span><span>Sarajevo 71000</span><span>Bosna i Hercegovina</span></div>
     </section>
     <section class="col-xs-12 col-sm-4">
-      <h4>PHONES:</h4>
-      <div><span>+387 62 746 478</span>+1 504 889 98 98<span></div>
+      <h4>TEL:</h4>
+      <div><span>+387 33 770-600</span></div>
     </section>
     <section class="col-xs-12 col-sm-4">
       <h4>E-MAIL:</h4>
-      <div><span>hotel@gastro.com</span></div>
+      <div><span>hotel@gastroid.ba</span></div>
     </section>
     <!-- <section class="col-xs-12">
       <h4>MISCELLANEOUS INFORMATION:</h4>
