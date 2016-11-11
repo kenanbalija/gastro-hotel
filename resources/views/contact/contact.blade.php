@@ -7,7 +7,7 @@
 @section('showcase')
 <section id="contact-real">
   <article id="contact-map">
-    <h3 class="col-xs-12">CONTACTS</h3>
+    <h3 class="col-xs-12">KONTAKT</h3>
     <section id="contact-map-size" class="col-xs-12">
       <div id="map"></div>
     </section>

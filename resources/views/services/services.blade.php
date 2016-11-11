@@ -9,12 +9,12 @@
   <h3>USLUGE ZA GOSTE</h3>
   <div class="row">
     <article id="guest-services" class="col-xs-12">
-      <h4>Organizacija prijevoza od i do aerodroma</h4>
+      <h4>Prijevoz sa i do aerodroma</h4>
       <div>
-        Hotel nudi organizaciju izleta za sto se mozete obratiti
-        hotelskom osoblju za vise informacija pri cemu ce Vam rado
-        pomoci da ponudu prilagodite Vasim potrebama.<br/>
-        Molim Vas kontaktirajte nas na hotel@gastroid.ba ili telefon…
+        Hotel nudi organizaciju izleta za što se možete obratiti
+        hotelskom osoblju za više informacija pri čemu će Vam rado
+        pomoći da ponudu prilagodite Vasim potrebama.<br/>
+        Molim Vas kontaktirajte nas na hotel@gastroid.ba ili telefon...
         <ul>
           <li><a>Skijanje</li>
           <li><a>Golf</a></li>

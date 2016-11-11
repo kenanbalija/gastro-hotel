@@ -15,9 +15,9 @@
       </div>
       <div class="col-xs-12 col-md-6">
         <h4>Standardne Sobe</h4>
-        <div>Standardne sobe sadrze LCD TV, mini-bar te kupaonicu
-          sa besplatnim kozmetickim priborom i fenom.
-          Pomocni lezajevi i djecji kreveti dostupni su na zahtjev.
+        <div>Standardne sobe sadrže LCD TV, mini-bar te kupaonicu
+          sa besplatnim kozmetičkim priborom i fenom.
+          Pomoćni ležajevi i dječji kreveti dostupni su na zahtjev.
         </div>
       </div>
     </article>
@@ -110,7 +110,7 @@
   <section id="lifestyle-budget">
     <article class="row">
       <div class="col-md-12">
-        <h2>CJENOVNIK / PRICE LIST</h2><br/>
+        <h2>CJENOVNIK</h2><br/>
         <div>VAŽI DO 21.1.2017
         </div><br/><br/>
         <button class="btn btn-success">download</button>

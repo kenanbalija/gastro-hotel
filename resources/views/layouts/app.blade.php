@@ -26,7 +26,7 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="{{ url('/') }}">Početna</a>
         <a href="{{ url('/rooms') }}">Sobe</a>
-        <a href="{{ url('/events') }}">Zbivanja</a>
+        <a href="{{ url('/events') }}">Dešavanja</a>
         <a href="{{ url('/services') }}">Usluge</a>
         <a href="{{ url('/contact') }}">Kontakt</a>
 
@@ -54,7 +54,7 @@
                       </li>
                       <li><a href="{{ url('/rooms') }}">Sobe</a></li>
                       <li><a href="{{ url('/photos') }}">Fotografije</a></li>
-                      <li><a href="{{ url('/events') }}">Zbivanja</a></li>
+                      <li><a href="{{ url('/events') }}">Dešavanja</a></li>
                       <li><a href="{{ url('/services') }}">Usluge</a></li>
                       <li><a href="{{ url('/contact') }}">Kontakt</a></li>
                   </ul>
@@ -138,6 +138,7 @@
       </div>
       <div class="footer-copyright">
         <div>GastroID Hotel &#169; | Privacy policy</div>
+        <div>All photographs are copyrighted by Ermin Okerić.</div>
       </div>
     </footer>
     <script>

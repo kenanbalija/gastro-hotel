@@ -85,7 +85,7 @@
            elegantno uređenih soba, ali i deluxe apartman
            koji osigurava potpunu privatnost i udobnost gostima.
             Situiran je na 11, 000 m2, te u ponudi ima à-la-carte
-            restoran s terasom, teniske terene, dječje igraliste,
+            restoran s terasom, teniske terene, dječje igralište,
             konferencijsku salu i ostali sadržaj.<br/>
             U hotelu je moguće organizovati sve vrste događaja za poslovne i
             privatne prilike za koje će vam iskusno hotelsko osoblje stajati
@@ -128,7 +128,7 @@
 
 @section('offer')
 <section id="booking">
-  <h3>REZERVACIJE</h3><span class="vertical-line"> | </span><h3>BOOKING</h3><span></span>
+  <h3>REZERVACIJE</h3>
     <div class="row">
       <form>
         <input class="col-xs-12" type="text" placeholder="Ime/Name">
@@ -189,6 +189,9 @@
         <li class="col-xs-6 col-sm-4">Teniski tereni</li>
         <li class="col-xs-6 col-sm-4">Prijevoz sa aerodroma</li>
         <li class="col-xs-6 col-sm-4">Recepcija 24h</li>
+        <li class="col-xs-6 col-sm-4">A la carte Restaurant</li>
+        <li class="col-xs-6 col-sm-4">Besplatan Wi-fi</li>
+        <li class="col-xs-6 col-sm-4">Organizacija evenata</li>
       </ul>
     </div>
   </section>

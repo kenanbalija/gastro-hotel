@@ -10,9 +10,9 @@
   <div class="row">
     <article id="events" class="col-xs-12">
       <div>
-        U mogućnosti ste organizovati sve vrste sastanaka i zabavnih dogadaja
-        privatnog i poslovnog karaktera pri cemu vam osoblje
-        hotela stoji na raspolaganju da vam pruzi kvalitetnu uslugu i vrhunski provod.
+        U mogućnosti ste organizovati sve vrste sastanaka i zabavnih događaja
+        privatnog i poslovnog karaktera pri čemu vam osoblje
+        hotela stoji na raspolaganju da vam pruži kvalitetnu uslugu i vrhunski provod.
         <ul>
           <li><a href="#">Vjenčanja</a></li>
           <li><a href="#">Team building</a></li>

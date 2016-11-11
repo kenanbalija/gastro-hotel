@@ -866,12 +866,13 @@ nav.navbar{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 85px;
+  height: 115px;
   color: white;
 }
 
 .footer-copyright div {
-  max-width: 220px;
+  text-align: center;
+  max-width: 340px;
   margin: 0 auto;
   padding-top: 25px;
 }
