@@ -31,3 +31,14 @@ Route::get('/services', 'HomeController@services');
 Route::get('/rooms/standard', 'RoomController@standard');
 Route::get('/rooms/superior', 'RoomController@superior');
 Route::get('/rooms/deluxe', 'RoomController@deluxe');
+Route::get('/rooms/catalog', 'RoomController@catalog');
+
+Route::get('/events/weddings', 'EventsController@wedding');
+Route::get('/events/teams', 'EventsController@team');
+Route::get('/events/conferences', 'EventsController@conference');
+Route::get('/events/birthdays', 'EventsController@birthday');
+
+Route::get('/services/skiing', 'ServicesController@ski');
+Route::get('/services/golfing', 'ServicesController@golf');
+Route::get('/services/riding', 'ServicesController@ride');
+Route::get('/services/rafting', 'ServicesController@raft');

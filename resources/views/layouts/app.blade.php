@@ -26,6 +26,7 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="{{ url('/') }}">Početna</a>
         <a href="{{ url('/rooms') }}">Sobe</a>
+        <a href="{{ url('/photos') }}">Fotografije</a>
         <a href="{{ url('/events') }}">Dešavanja</a>
         <a href="{{ url('/services') }}">Usluge</a>
         <a href="{{ url('/contact') }}">Kontakt</a>
@@ -94,16 +95,16 @@
           <div id="aboutDiv">
             <div class="row">
               <div class="col-xs-3">
-                <a>O Hotelu</a>
+                <a href="{{ url('/home') }}#welcome">O Hotelu</a>
               </div>
               <div class="col-xs-3">
-                <a>Rezervacija</a>
+                <a href="{{ url('/home') }}#booking">Rezervacija</a>
               </div>
               <div class="col-xs-3">
-                <a>Povežimo se</a>
+                <a href="{{ url('/home') }}#connect-us">Povežimo se</a>
               </div>
               <div class="col-xs-3">
-                <a>Sadržaj</a>
+                <a href="{{ url('/home') }}#news">Sadržaj</a>
               </div>
             </div>
           </div>
@@ -130,28 +131,33 @@
     <footer>
       <div class="footer-inner">
         <div class="row">
-          <div class="col-xs-4"><a href="#"><img src={{ asset('img/icons/facebook.ico') }}></a></div>
-          <div class="col-xs-4"><a href="#"><img src={{ asset('img/icons/instagram.ico') }}></a></div>
-          <div class="col-xs-4"><a href="#"><img src={{ asset('img/icons/twitter.ico') }}></a></div>
-          <!-- <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/google.ico') }}></a></div> -->
+          <div class="col-xs-3"><a href="https://www.facebook.com/Hotel-by-Gastroid-549599331885337/"><img src={{ asset('img/icons/facebook.ico') }}></a></div>
+          <div class="col-xs-3"><a href="https://www.instagram.com/hotel_by_gastroid/?hl=en"><img src={{ asset('img/icons/instagram.ico') }}></a></div>
+          <div class="col-xs-3"><a href="#"><img src={{ asset('img/icons/youtube.ico') }}></a></div>
+          <div class="col-xs-3"><a href="{{ url('/contact') }}"><img src={{ asset('img/icons/map-2.ico') }}></a></div>
         </div>
       </div>
       <div class="footer-copyright">
         <div>GastroID Hotel &#169; | Privacy policy</div>
-        <div>All photographs are copyrighted by Ermin Okerić.</div>
+        <div style="font-size: 8px;">All photographs are copyrighted by Ermin Okerić.</div>
+        <div style="font-size: 8px;">Web designed by Elvis Rudonja & Kenan Balija</div>
+
       </div>
     </footer>
     <script>
       function initMap() {
         var uluru = {lat: 	43.836000, lng: 18.320320};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
-          center: uluru
+          zoom: 12,
+          center: uluru,
+          styles: [{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"lightness":"81"},{"color":"#d8c593"}]},{"featureType":"administrative.country","elementType":"labels","stylers":[{"lightness":"58"},{"hue":"#ff0000"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"gamma":"0.56"}]},{"featureType":"administrative.province","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"labels","stylers":[{"lightness":"40"}]},{"featureType":"administrative.locality","elementType":"labels.text.stroke","stylers":[{"weight":"0.49"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]},{"featureType":"road.highway","elementType":"all","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","elementType":"all","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":"43"}]}]
+
         });
         var marker = new google.maps.Marker({
           position: uluru,
           map: map
         });
+
       }
     </script>
 <script async defer

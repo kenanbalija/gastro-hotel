@@ -60,6 +60,32 @@
             <div><img src="{{ asset('img/hotels/restaurants/Hotel-101.jpg')}}" class="img-fluid"></div>
         </a>
       </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a href="{{ asset('img/hotels/restaurants/1.jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+            <div><img src="{{ asset('img/hotels/restaurants/1.jpg')}}" class="img-fluid"></div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a href="{{ asset('img/hotels/restaurants/2.jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+            <div><img src="{{ asset('img/hotels/restaurants/2.jpg')}}" class="img-fluid"></div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a href="{{ asset('img/hotels/restaurants/3.jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+            <div><img src="{{ asset('img/hotels/restaurants/3.jpg')}}" class="img-fluid"></div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a href="{{ asset('img/hotels/restaurants/4.jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+            <div><img src="{{ asset('img/hotels/restaurants/4.jpg')}}" class="img-fluid"></div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a href="{{ asset('img/hotels/restaurants/5.jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+            <div><img src="{{ asset('img/hotels/restaurants/5.jpg')}}" class="img-fluid"></div>
+        </a>
+      </div>
+
     </div>
 </div>
 </section>

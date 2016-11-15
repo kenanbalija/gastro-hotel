@@ -39,15 +39,23 @@
 @endsection
 @section('offer')
 <section id="booking">
-  <h3>REZERVACIJE</h3><span class="vertical-line"> | </span><h3>BOOKING</h3><span></span>
-    <div class="row">
-      <form>
-        <input class="col-xs-12" type="text" placeholder="Ime/Name">
-        <input class="col-xs-12" type="text" placeholder="Prezime/Surname">
-        <input class="col-xs-12" type="email" placeholder="Email">
-        <input class="col-xs-12" type="number" placeholder="Broj/Phone">
-        <input class="col-xs-12 btn btn-success" type="submit">
-      </form>
-    </div>
+  <h3>REZERVACIJE</h3>
+  <div class="row">
+    <form>
+      <input class="col-xs-12" type="text" placeholder="Ime">
+      <input class="col-xs-12" type="text" placeholder="Prezime">
+      <input class="col-xs-12" type="email" placeholder="Email">
+      <input class="col-xs-12" type="number" placeholder="Broj">
+      <span class="col-xs-12">Datum prijave</span><input class="col-xs-12" type="date" value="2016-01-12">
+      <span class="xol-xs-12">Datum odjave</span><input class="col-xs-12" type="date" value="2016-01-12">
+      <span class="col-xs-12">Vrsta sobe</span>
+      <select class="col-xs-12">
+        <option value="standard">Standardna soba</option>
+        <option value="superior">Superior apartman</option>
+        <option value="deluxe">Deluxe apartman</option>
+      </select>
+      <input class="col-xs-12 btn btn-success" type="submit" value="Rezerviši">
+    </form>
+  </div>
 </section>
 @endsection

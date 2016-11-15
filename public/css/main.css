@@ -2,8 +2,7 @@ body {
   background-color: #F7F7F7;
   scroll-behavior: smooth;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 16px;
   color: #777777;
   background-color: #f7f7f7;
 }
@@ -112,18 +111,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   color: azure;
   text-align: left;
   max-width: 1132px;
-  height: 180px;
+  height: 80px;
   background: rgba(0,0,0, 0.5);
   margin: 0 auto;
   padding: 10px 50px;
   text-align: center;
 }
 #aboutDiv .row div {
-  margin-top: 50px;
 
 }
 #aboutDiv .row div a {
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
   text-decoration: none;
   color: azure;
@@ -283,6 +281,10 @@ nav.navbar{
   margin:0;
 }
 
+nav li a {
+  font-size: 14px;
+}
+
 .navbar-nav li a button img {
   width: 18px;
 }
@@ -375,6 +377,16 @@ nav.navbar{
 }
 .carousel-inner  div:nth-child(9){
   background: url('../img/Hotel-142.jpg') no-repeat;
+  background-size:cover;
+
+}
+.carousel-inner  div:nth-child(10){
+  background: url('../img/7.jpg') no-repeat;
+  background-size:cover;
+
+}
+.carousel-inner  div:nth-child(11){
+  background: url('../img/6.jpg') no-repeat;
   background-size:cover;
 
 }
@@ -544,8 +556,12 @@ nav.navbar{
 }
 #rooms .row article div div{
   padding: 10px;
-  letter-spacing: 1px;
-  font-size: 17px;
+  font-size: 16px;
+}
+#rooms .row article div div ul{
+  list-style-type: lower-roman;
+  font-size: 16px;
+  padding-top: 20px;
 }
 #stnd-rooms {
   min-height: 400px;
@@ -602,17 +618,27 @@ nav.navbar{
   padding-top: 50px;
 }
 #booking .row form input {
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
 }
-
+#booking .row form span {
+  top: 0;
+  font-weight: 400;
+  padding-left: 10px;
+}
+#booking .row form select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
 /*booking section end */
 /*tweet section start*/
 
 #connect-us{
   z-index: 1000;
   text-align: center;
-  height: 200px;
+  height: 150px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -624,7 +650,7 @@ nav.navbar{
   padding-top: 50px;
 }
 
-#connect-us article h1 {
+#connect-us article h3 {
   text-shadow: 0 0 10px black;
   color: azure;
   font-weight: 900;
@@ -641,7 +667,7 @@ nav.navbar{
   -webkit-transform: translateZ(-999px) scale(1);
   transform: translateZ(-999px) scale(1);
   z-index: -3;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 #connect-us-sub article div div img {
@@ -679,7 +705,7 @@ nav.navbar{
 
 #news {
   max-width: 1132px;
-  margin:0 auto 130px;
+  margin:0 auto 50px;
   padding: 20px;
 }
 #news h3 {
@@ -701,9 +727,15 @@ nav.navbar{
   padding: 0;
 }
 #ciljane-grupe ul li {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 15px;
   letter-spacing: 1px;
+}
+
+#ciljane-grupe ul li img {
+  position: relative;
+  top:-2px;
+  margin-right: 15px;
 }
 #news .row {
   padding: 0;
@@ -721,14 +753,19 @@ nav.navbar{
   letter-spacing: 1px;
 }
 #events div ul {
-  margin-top: 50px;
+  margin: 50px auto 0;
   list-style-type: none;
+  max-width: 590px;
   padding: 0;
-  text-align: center;
 }
 #events div ul li {
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 15px;
+  height: 60px;
+
+}
+#events div ul li img {
+  margin-right: 10px;
 }
 #events div ul li a{
     text-decoration: none;
@@ -740,24 +777,25 @@ nav.navbar{
 #guest-services {
   background-color: white;
   min-height: 370px;
-  line-height: 23px;
   padding: 20px;
-  letter-spacing: 1px;
 }
 #guest-services div ul {
-  margin-top: 50px;
+  margin: 50px auto;
+  max-width: 590px;
   list-style-type: none;
   padding: 0;
-  text-align: center;
 }
 #guest-services div ul li {
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 15px;
 }
 #guest-services div ul li a{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+#guest-services div ul li img{
+  margin-right: 5px;
 }
 
 #news .vertical-line {
@@ -861,20 +899,22 @@ nav.navbar{
   width: 24px;
 }
 .footer-copyright {
+  font-size: 12px;
   background:url('../img/beach-bar.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 115px;
+  height: 60px;
   color: white;
 }
 
 .footer-copyright div {
+  letter-spacing: 0.1em;
   text-align: center;
   max-width: 340px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 5px;
 }
 
 #contact-real {
@@ -897,7 +937,9 @@ nav.navbar{
 }
 #contact-map {
   min-height: 500px;
-
+}
+#contact-map h3 {
+  margin-bottom:  50px;
 }
 #contact-info {
   min-height: 200px;
@@ -937,7 +979,7 @@ nav.navbar{
 
 #lifestyle-budget {
   color: azure;
-  height: 500px;
+  height: 450px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -954,6 +996,9 @@ nav.navbar{
   text-shadow: 0 0 10px black;
   max-width: 1132px;
   margin: 0 auto;
+}
+#lifestyle-budget .row div a  {
+  text-decoration: none;
 }
 
 
@@ -1116,8 +1161,14 @@ nav.navbar{
   background-size: cover;
 }
 
+h3 {
+  font-size: 24px;
+}
 /* all media goes here */
 
+a:focus, a:hover {
+  color: inherit;
+}
 @media screen and (max-width: 1080px) {
   #extra-bg {
     height: 80px;

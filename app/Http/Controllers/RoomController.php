@@ -17,4 +17,7 @@ class RoomController extends Controller
     public function deluxe(){
       return view('rooms.deluxe');
     }
+    public function catalog(){
+      return view('rooms.catalog');
+    }
 }
