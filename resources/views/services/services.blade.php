@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app')
 
 @section('content')
 <section id="extra-bg">
@@ -39,4 +39,4 @@
   </div>
 </section>
 
-@endsection
+@endsection -->

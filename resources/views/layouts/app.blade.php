@@ -27,8 +27,8 @@
         <a href="{{ url('/') }}">Početna</a>
         <a href="{{ url('/rooms') }}">Sobe</a>
         <a href="{{ url('/photos') }}">Fotografije</a>
-        <a href="{{ url('/events') }}">Dešavanja</a>
-        <a href="{{ url('/services') }}">Usluge</a>
+        <a href="{{ url('/events') }}">Dešavanja i Usluge</a>
+        <!-- <a href="{{ url('/services') }}">Usluge</a> -->
         <a href="{{ url('/contact') }}">Kontakt</a>
 
     </div>
@@ -55,8 +55,8 @@
                       </li>
                       <li><a href="{{ url('/rooms') }}">Sobe</a></li>
                       <li><a href="{{ url('/photos') }}">Fotografije</a></li>
-                      <li><a href="{{ url('/events') }}">Dešavanja</a></li>
-                      <li><a href="{{ url('/services') }}">Usluge</a></li>
+                      <li><a href="{{ url('/events') }}">Dešavanja i Usluge</a></li>
+                      <!-- <li><a href="{{ url('/services') }}">Usluge</a></li> -->
                       <li><a href="{{ url('/contact') }}">Kontakt</a></li>
                   </ul>
 
