@@ -1,5 +1,4 @@
-@extends('layouts.app')
-
+@extends('en.layouts.app')
 @section('content')
 <section>
 <div id="carousel-generic" class="carousel slide" data-ride="carousel">
@@ -70,30 +69,31 @@
 
 @section('showcase')
   <section id="welcome">
-    <h3>O HOTELU</h3>
+    <h3>ABOUT US</h3>
       <div class="row">
         <div class="col-xs-12 col-md-6 welcome-bg">
           <img src="{{ asset('img/about-bg.jpg') }}">
         </div>
         <div class="col-xs-12 col-md-6 intro-text">
-          Hotel by GastroID u Sarajevu ima dugogodišnju tradiciju pružanja izvanredne
-           hotelske usluge gostima i vjernim posjetiocima. Hotel u ponudi ima 40
-           elegantno uređenih soba, ali i deluxe apartman koji osigurava potpunu
-           privatnost i udobnost gostima. Cijeli hotel je uređen koristeći elemente
-           brodskog stila uz namještaj i detalje od punog drva. Situiran je na 11, 000 m2,
-            te u ponudi ima à-la-carte restoran s terasom, teniske terene, dječje
-            igralište, konferencijsku salu i ostali sadržaj koji je gostima na punom
-            raspologanju. Centar grada je udaljen samo 9 km, a blizina tramvajske stanice
-             kao i mnoge taxi službe pristupačnih cijena omogućavaju da se vrlo lako dođe
-             do željene lokacije.
+          Hotel by GastroID in Sarajevo has a long tradition of offering an
+          exceptional guest service. Hotel has 40 elegantly decorated rooms,
+          as well as a deluxe apartment ensuring complete privacy and comfort.
+          The whole hotel Is decorated using elements of “marina style” with
+          furniture and other details made out of sold hardwood. The hotel is
+          set on 11, 000 m2 featuring an à-la-carte restaurant with a sun terrace,
+          tennis court, children playground, conference hall and other accompanying
+          facilities and amenities. City centre is located just 9 km from the hotel,
+          and the proximity of tram station as well as numerous taxi companies
+           offering low prices for their services, allow for any location to be
+            easily reached.
         </div>
       <div class="col-xs-12 col-md-6 intro text">
-        Hotel by GastroID takođe nudi mogućnost organizacije svih vrsta događaja za
-        poslovne i privatne prilike za koje će vam iskusno hotelsko osoblje stajati
-        na punom raspolaganju. Hotel u svojoj ponudi ima i organizaciju različitih
-        turističkih posjeta i ostalih aktivnosti za hotelske goste za što možete
-        izravno kontaktirati osoblje za više detalja. Ukoliko želite provesti ugodan
-         i opušten boravak u Sarajevu, Hotel by GastroID je pravi izbor za vas.
+        All type of business meetings and private events can be organized
+         with experienced hotel staff being at full disposal to our guests.
+          Hotel is also offering to organize entertaining tourist visits and
+          leisure activities outside hotel premises. If you wish to experience
+           a comfortable and relaxing visit to Sarajevo, Hotel by GastroID is
+            the right choice for you.
        </div>
         </div>
   </section>
@@ -101,22 +101,22 @@
 
 @section('offer')
 <section id="booking">
-  <h3>REZERVACIJE</h3>
+  <h3>RESERVATIONS</h3>
     <div class="row">
       <form action="/contact" method="post" enctype="text/plain">
         <input class="col-xs-12" type="text" placeholder="Ime">
         <input class="col-xs-12" type="text" placeholder="Prezime">
         <input class="col-xs-12" type="email" placeholder="Email">
         <input class="col-xs-12" type="number" placeholder="Broj">
-        <span class="col-xs-12">Datum prijave</span><input class="col-xs-12" type="date" value="2016-01-12">
-        <span class="xol-xs-12">Datum odjave</span><input class="col-xs-12" type="date" value="2016-01-12">
-        <span class="col-xs-12">Vrsta sobe</span>
+        <span class="col-xs-12">Check-in</span><input class="col-xs-12" type="date" value="2016-01-12">
+        <span class="xol-xs-12">Check-out</span><input class="col-xs-12" type="date" value="2016-01-12">
+        <span class="col-xs-12">Room type</span>
         <select class="col-xs-12">
-          <option value="standard">Standardna soba</option>
-          <option value="superior">Superior apartman</option>
-          <option value="deluxe">Deluxe apartman</option>
+          <option value="standard">Standard room</option>
+          <option value="superior">Superior apartmant</option>
+          <option value="deluxe">Deluxe apartmant</option>
         </select>
-        <input class="col-xs-12 btn btn-success" type="submit" value="Rezerviši">
+        <input class="col-xs-12 btn btn-success" type="submit" value="Reserve">
       </form>
     </div>
 </section>
@@ -125,7 +125,7 @@
 @section('showcase-two')
 <section id="connect-us">
   <article class="col-xs-12">
-    <h3>POVEŽIMO SE</h3>
+    <h3>CONNECT</h3>
   </article>
 </section>
 <section id="connect-us-sub">
@@ -161,18 +161,18 @@
 
 @section('feature-two')
   <section id="news">
-    <h3>SADRŽAJ</h3>
+    <h3>KEY AMNESTIES</h3>
     <div id="ciljane-grupe" class="row">
       <ul>
-        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/swing.png') }}">Dječje igralište</li>
+        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/swing.png') }}">Children's playground</li>
         <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/parking.png') }}">Parking</li>
-        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/reunion.png') }}">Konferencijska sala</li>
-        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/tennis.png') }}">Teniski tereni</li>
-        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/taxi.png') }}">Prijevoz sa aerodroma</li>
-        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/reception.png') }}">Recepcija 24h</li>
+        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/reunion.png') }}">Conference room</li>
+        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/tennis.png') }}">Tennis court</li>
+        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/taxi.png') }}">Transport from the airport</li>
+        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/reception.png') }}">Reception 24h</li>
         <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/toast.png') }}">A la carte Restaurant</li>
-        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/wifi.png') }}">Besplatan Wi-fi</li>
-        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/calendar.png') }}">Organizacija evenata</li>
+        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/wifi.png') }}">Free Wi-fi</li>
+        <li class="col-xs-12 col-sm-4"><img src="{{ asset('img/icons/calendar.png') }}">Event organization</li>
       </ul>
     </div>
   </section>

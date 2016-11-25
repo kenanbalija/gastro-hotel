@@ -45,4 +45,28 @@ class HomeController extends Controller
       return view('services.services');
     }
 
+    //en Part
+    public function indexEn()
+    {
+        return view('en.home');
+    }
+    public function aboutEn(){
+      return view('en.about.about');
+    }
+    public function roomsEn(){
+      return view('en.rooms.rooms');
+    }
+    public function eventsEn(){
+      return view('en.events.events');
+    }
+    public function contactEn(){
+      return view('en.contact.contact');
+    }
+    public function photosEn(){
+      return view('en.gallery.photos');
+    }
+    public function servicesEn(){
+      return view('en.services.services');
+    }
+
 }

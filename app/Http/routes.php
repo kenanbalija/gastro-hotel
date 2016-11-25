@@ -42,3 +42,36 @@ Route::get('/services/skiing', 'ServicesController@ski');
 Route::get('/services/golfing', 'ServicesController@golf');
 Route::get('/services/riding', 'ServicesController@ride');
 Route::get('/services/rafting', 'ServicesController@raft');
+
+
+//en Routes
+
+Route::get('/en', 'HomeController@indexEn');
+Route::get('/en/home', 'HomeController@indexEn');
+Route::get('/en/about', 'HomeController@aboutEn');
+Route::get('/en/rooms', 'HomeController@roomsEn');
+Route::get('/en/events', 'HomeController@eventsEn');
+
+Route::get('/en/photos', 'HomeController@photosEn');
+Route::get('/en/photos/apartmants', 'PhotoController@apartmantsEn');
+Route::get('/en/photos/restaurants', 'PhotoController@restaurantsEn');
+Route::get('/en/photos/exterior', 'PhotoController@exteriorEn');
+
+Route::get('/en/contact', 'HomeController@contactEn');
+Route::get('/en/services', 'HomeController@servicesEn');
+
+
+Route::get('/en/rooms/standard', 'RoomController@standardEn');
+Route::get('/en/rooms/superior', 'RoomController@superiorEn');
+Route::get('/en/rooms/deluxe', 'RoomController@deluxeEn');
+Route::get('/en/rooms/catalog', 'RoomController@catalogEn');
+
+Route::get('/en/events/weddings', 'EventsController@weddingEn');
+Route::get('/en/events/teams', 'EventsController@teamEn');
+Route::get('/en/events/conferences', 'EventsController@conferenceEn');
+Route::get('/en/events/birthdays', 'EventsController@birthdayEn');
+
+Route::get('/en/services/skiing', 'ServicesController@skiEn');
+Route::get('/en/services/golfing', 'ServicesController@golfEn');
+Route::get('/en/services/riding', 'ServicesController@rideEn');
+Route::get('/en/services/rafting', 'ServicesController@raftEn');
