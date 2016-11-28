@@ -1,6 +1,8 @@
-@extends('en.layouts.app')
+@extends('layouts.app')
 
 @section('content')
+@include('navigations.navigationEN')
+
 <section id="extra-bg">
 </section>
 @endsection
@@ -16,19 +18,19 @@
         <ul class="row">
           <li class="col-xs-12 col-sm-6 ">
             <img style="width: 32px;" src="{{ asset('img/icons/signs.png') }}">
-            <a href="{{ url('/events/weddings') }}">Weddings</a>
+            <a href="{{ url('/en/events/weddings') }}">Weddings</a>
           </li>
           <li class="col-xs-12 col-sm-6 ">
             <img style="width: 32px;" src="{{ asset('img/icons/team.png') }}">
-            <a href="{{ url('/events/teams') }}">Team building</a>
+            <a href="{{ url('/en/events/teams') }}">Team building</a>
           </li>
           <li class="col-xs-12 col-sm-6 ">
             <img style="width: 32px;" src="{{ asset('img/icons/presentation.png') }}">
-            <a href="{{ url('/events/conferences') }}">Conference room</a>
+            <a href="{{ url('/en/events/conferences') }}">Conference room</a>
           </li>
           <li class="col-xs-12 col-sm-6 ">
             <img style="width: 32px;" src="{{ asset('img/icons/food.png') }}">
-            <a href="{{ url('/events/birthdays') }}">Birthday celebrations and other events</a>
+            <a href="{{ url('/en/events/birthdays') }}">Birthday celebrations and other events</a>
           </li>
         </ul>
       </div>

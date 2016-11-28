@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+@include('navigations.navigationBA')
+
 <section>
 <div id="carousel-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->

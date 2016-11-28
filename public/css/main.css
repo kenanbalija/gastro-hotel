@@ -31,6 +31,9 @@ a{
   height: 50px;
   margin-right: 10px;
 }
+#mySidenav a img {
+  height: 24px;
+}
 
 
 ul.nav li.dropdown:hover > ul.dropdown-menu {
@@ -1269,4 +1272,7 @@ a:focus, a:hover {
     display: block!important;
   }
 
+  nav {
+    display: none;
+  }
 }

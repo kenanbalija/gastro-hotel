@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+@include('navigations.navigationEN')
+
 <section id="extra-bg">
 </section>
 @endsection

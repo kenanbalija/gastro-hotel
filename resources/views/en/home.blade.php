@@ -1,5 +1,7 @@
-@extends('en.layouts.app')
+@extends('layouts.app')
 @section('content')
+@include('navigations.navigationEN')
+
 <section>
 <div id="carousel-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -104,10 +106,10 @@
   <h3>RESERVATIONS</h3>
     <div class="row">
       <form action="/contact" method="post" enctype="text/plain">
-        <input class="col-xs-12" type="text" placeholder="Ime">
-        <input class="col-xs-12" type="text" placeholder="Prezime">
+        <input class="col-xs-12" type="text" placeholder="Name">
+        <input class="col-xs-12" type="text" placeholder="Surname">
         <input class="col-xs-12" type="email" placeholder="Email">
-        <input class="col-xs-12" type="number" placeholder="Broj">
+        <input class="col-xs-12" type="number" placeholder="Phone">
         <span class="col-xs-12">Check-in</span><input class="col-xs-12" type="date" value="2016-01-12">
         <span class="xol-xs-12">Check-out</span><input class="col-xs-12" type="date" value="2016-01-12">
         <span class="col-xs-12">Room type</span>
