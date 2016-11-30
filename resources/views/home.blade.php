@@ -59,6 +59,7 @@
     <span class="sr-only">Next</span>
   </a>
   -->
+
 </div>
 <section class="carous-bg">
   <div class="carous-bg-inner">
@@ -77,8 +78,9 @@
         <div class="col-xs-12 col-md-6 welcome-bg">
           <img src="{{ asset('img/about-bg.jpg') }}">
         </div>
+
         <div class="col-xs-12 col-md-6 intro-text">
-          Hotel by GastroID u Sarajevu ima dugogodišnju tradiciju pružanja izvanredne
+          <!-- Hotel by GastroID u Sarajevu ima dugogodišnju tradiciju pružanja izvanredne
            hotelske usluge gostima i vjernim posjetiocima. Hotel u ponudi ima 40
            elegantno uređenih soba, ali i deluxe apartman koji osigurava potpunu
            privatnost i udobnost gostima. Cijeli hotel je uređen koristeći elemente
@@ -87,15 +89,21 @@
             igralište, konferencijsku salu i ostali sadržaj koji je gostima na punom
             raspologanju. Centar grada je udaljen samo 9 km, a blizina tramvajske stanice
              kao i mnoge taxi službe pristupačnih cijena omogućavaju da se vrlo lako dođe
-             do željene lokacije.
+             do željene lokacije. -->
+             @foreach($texts as $tekst)
+               {{ $tekst->about_tekst }}
+             @endforeach
         </div>
       <div class="col-xs-12 col-md-6 intro text">
-        Hotel by GastroID takođe nudi mogućnost organizacije svih vrsta događaja za
+        <!-- Hotel by GastroID takođe nudi mogućnost organizacije svih vrsta događaja za
         poslovne i privatne prilike za koje će vam iskusno hotelsko osoblje stajati
         na punom raspolaganju. Hotel u svojoj ponudi ima i organizaciju različitih
         turističkih posjeta i ostalih aktivnosti za hotelske goste za što možete
         izravno kontaktirati osoblje za više detalja. Ukoliko želite provesti ugodan
-         i opušten boravak u Sarajevu, Hotel by GastroID je pravi izbor za vas.
+         i opušten boravak u Sarajevu, Hotel by GastroID je pravi izbor za vas. -->
+         @foreach($texts as $tekst)
+           {{ $tekst->about_tekst_sub }}
+         @endforeach
        </div>
         </div>
   </section>

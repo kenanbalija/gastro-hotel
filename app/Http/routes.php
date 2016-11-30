@@ -15,6 +15,7 @@
 Route::auth();
 Route::get('/', 'HomeController@index' );
 Route::get('/home', 'HomeController@index');
+Route::get('/home/edit', 'HomeController@edit');
 Route::get('/about', 'HomeController@about');
 Route::get('/rooms', 'HomeController@rooms');
 Route::get('/events', 'HomeController@events');

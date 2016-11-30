@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
-
+use App\Text;
 class HomeController extends Controller
 {
     /**
@@ -24,7 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $texts = Text::all();
+        return view('home', compact('texts'));
+    }
+    public function edit(){
+      return view('edits/homeEdit');
     }
     public function about(){
       return view('about.about');
@@ -48,7 +52,8 @@ class HomeController extends Controller
     //en Part
     public function indexEn()
     {
-        return view('en.home');
+        $texts = Text::all();
+        return view('en.home', compact('texts'));
     }
     public function aboutEn(){
       return view('en.about.about');
