@@ -17,7 +17,7 @@
       </div>
       <div class="col-xs-12 col-md-6">
         <h4>Standardne Sobe</h4>
-        <div>Standardne sobe sadrže LCD TV, mini-bar te kupaonicu sa besplatnim
+        <div><!-- Standardne sobe sadrže LCD TV, mini-bar te kupaonicu sa besplatnim
            kozmetičkim priborom i fenom. Pomoćni ležajevi i dječji kreveti dostupni
             su na zahtjev. Možete birati između jednokrevetne, dvokrevetne
             (bračni ili razdvojeni kreveti) i trokrevetne sobe.
@@ -27,7 +27,10 @@
               <li>Klima uređaj</li>
               <li>Usluga buđenja</li>
               <li>Posluga u sobu</li>
-            </ul>
+            </ul> -->
+            @foreach($rooms as $room)
+              {!! $room->standard_room !!}
+            @endforeach
         </div>
       </div>
     </article>
@@ -41,7 +44,7 @@
       </div>
       <div class="col-xs-12 col-md-6">
         <h4>Superior apartman</h4>
-        <div>Ovaj klimatizirani suite uključuje LCD TV sa satelitskim programima,
+        <div><!-- <Ovaj klimatizirani suite uključuje LCD TV sa satelitskim programima,
            prostor za sjedenje s kaučem na rasklapanje, mini bar i kupaonicu s
            besplatnim kozmetičkim priborom, sušilom za kosu te kadom. Također
            ima dodatni WC i potpuno opremljenu čajnu kuhinju. Ova jedinica sadrži
@@ -50,7 +53,10 @@
               <li>70 m2</li>
               <li>Pogled na vrt</li>
               <li>Besplatan wi-fi</li>
-            </ul>
+            </ul> -->
+            @foreach($rooms as $room)
+              {!! $room->superior_room !!}
+            @endforeach
         </div>
       </div>
     </article>
@@ -66,7 +72,7 @@
       <div class="col-xs-12 col-md-6">
         <h4>Deluxe apartman</h4>
         <div>
-          Ovaj elegantno uređeni suite uključuje klima-uređaj, LCD TV sa satelitskim
+          <!-- Ovaj elegantno uređeni suite uključuje klima-uređaj, LCD TV sa satelitskim
           programima, DVD uređaj i prostrani dnevni boravak s kaminom.
           Potpuno opremljena kuhinja ima blagovaonicu. U kupaonici su na raspolaganju
           tuš, sušilo za kosu i besplatni kozmetički pribor. Apartman ima dvije
@@ -76,7 +82,10 @@
              <li>Odvojen ulaz</li>
              <li>Jacuzzi</li>
              <li>Posluga u sobu</li>
-           </ul>
+           </ul> -->
+           @foreach($rooms as $room)
+             {!! $room->deluxe_room !!}
+           @endforeach
         </div>
       </div>
     </article>

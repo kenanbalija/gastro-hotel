@@ -91,7 +91,7 @@
              kao i mnoge taxi službe pristupačnih cijena omogućavaju da se vrlo lako dođe
              do željene lokacije. -->
              @foreach($texts as $tekst)
-               {{ $tekst->about_tekst }}
+               {!! $tekst->about_tekst !!}
              @endforeach
         </div>
       <div class="col-xs-12 col-md-6 intro text">
@@ -102,7 +102,7 @@
         izravno kontaktirati osoblje za više detalja. Ukoliko želite provesti ugodan
          i opušten boravak u Sarajevu, Hotel by GastroID je pravi izbor za vas. -->
          @foreach($texts as $tekst)
-           {{ $tekst->about_tekst_sub }}
+           {!! $tekst->about_tekst_sub !!}
          @endforeach
        </div>
         </div>

@@ -17,7 +17,7 @@
       </div>
       <div class="col-xs-12 col-md-6">
         <h4>Rooms</h4>
-        <div>All units comprise an LCD TV, a minibar and a bathroom with free
+        <div><!-- All units comprise an LCD TV, a minibar and a bathroom with free
           toiletries and a hairdryer. Any type of extra bed or child's cot/crib
            is upon request. Guest can choose a single, double (double or twin
            beds) or triple room
@@ -27,7 +27,10 @@
               <li>Air conditioning</li>
               <li>Wake-up service</li>
               <li>Room service</li>
-            </ul>
+            </ul> -->
+            @foreach($rooms as $room)
+              {!! $room->standard_room_en !!}
+            @endforeach
         </div>
       </div>
     </article>
@@ -41,7 +44,7 @@
       </div>
       <div class="col-xs-12 col-md-6">
         <h4>Superior apartment</h4>
-        <div>b.	Air-conditioned suite featuring an LCD satellite TV, a seating
+        <div><!--b.	Air-conditioned suite featuring an LCD satellite TV, a seating
            area with a sofa bed, a minibar and a bathroom providing free
            toiletries, hairdryer and a bath tub. This suite features an
            additional toilet, and a fully equipped kitchenette. This room
@@ -50,7 +53,10 @@
               <li>70 m2</li>
               <li>Garden view</li>
               <li>Free wi-fi</li>
-            </ul>
+            </ul> -->
+            @foreach($rooms as $room)
+              {!! $room->superior_room_en !!}
+            @endforeach
         </div>
       </div>
     </article>
@@ -66,7 +72,7 @@
       <div class="col-xs-12 col-md-6">
         <h4>Deluxe apartman</h4>
         <div>
-          b.	This elegant suite offers air-conditioning, LCD satellite TV
+          <!-- b.	This elegant suite offers air-conditioning, LCD satellite TV
           and a DVD player and a fireplace in a spacious living room.
           A fully equipped kitchen has a dining area. The bathroom includes a
           shower, hairdryer and free toiletries. The apartment consists of
@@ -76,7 +82,10 @@
              <li>Separate entrance</li>
              <li>Jacuzzi</li>
              <li>Room service</li>
-           </ul>
+           </ul> -->
+           @foreach($rooms as $room)
+             {!! $room->deluxe_room_en !!}
+           @endforeach
         </div>
       </div>
     </article>

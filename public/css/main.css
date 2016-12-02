@@ -6,6 +6,26 @@ body {
   color: #777777;
   background-color: #f7f7f7;
 }
+#alert {
+    position: absolute;
+    top: 500px;
+    width: 500px;
+    margin: 0 auto;
+    background: green ;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    z-index: 100;
+}
+.editStuff
+.editStuff div {
+  height: 50px;
+  background-color: red;
+  width: 50px;
+  margin: 0 auto;
+}
+
 a{
   color: inherit;
   cursor: pointer;
@@ -410,6 +430,11 @@ nav li a {
 
 
 /*welcome section*/
+.textovi {
+  width: 700px;
+  height: 400px;
+  text-align: justify;
+}
 #welcome {
   max-width: 1132px;
   margin:0px auto 130px;

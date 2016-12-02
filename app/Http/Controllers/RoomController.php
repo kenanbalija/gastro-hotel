@@ -33,4 +33,6 @@ class RoomController extends Controller
     public function catalogEn(){
       return view('en.rooms.catalog');
     }
+
+    
 }

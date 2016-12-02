@@ -89,7 +89,7 @@
            offering low prices for their services, allow for any location to be
             easily reached. -->
             @foreach($texts as $tekst)
-              {{ $tekst->about_tekst_en }}
+              {!! $tekst->about_tekst_en !!}
             @endforeach
         </div>
       <div class="col-xs-12 col-md-6 intro text">
@@ -100,7 +100,7 @@
            a comfortable and relaxing visit to Sarajevo, Hotel by GastroID is
             the right choice for you. -->
             @foreach($texts as $tekst)
-              {{ $tekst->about_tekst_sub_en }}
+              {!! $tekst->about_tekst_sub_en !!}
             @endforeach
        </div>
         </div>

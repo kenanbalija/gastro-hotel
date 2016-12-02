@@ -15,13 +15,24 @@
 Route::auth();
 Route::get('/', 'HomeController@index' );
 Route::get('/home', 'HomeController@index');
-Route::get('/home/edit', 'HomeController@edit');
+Route::get('/home/edit/{id}', 'HomeController@edit');
+Route::post('home/save/{id}', 'HomeController@save');
+
 Route::get('/about', 'HomeController@about');
 Route::get('/rooms', 'HomeController@rooms');
+Route::get('/rooms/edit/{id}', 'HomeController@rooms_edit');
+Route::post('/rooms/save/{id}', 'HomeController@rooms_save');
+
 Route::get('/events', 'HomeController@events');
+Route::get('/events/edit/{id}', 'HomeController@events_edit');
+Route::post('/events/save/{id}', 'HomeController@events_save');
+
 
 Route::get('/photos', 'HomeController@photos');
 Route::get('/photos/apartmants', 'PhotoController@apartmants');
+Route::get('/photos/apartmants/add', 'PhotoController@apartmants_add');
+Route::post('/photos/apartmants/save', 'PhotoController@apartmants_save');
+
 Route::get('/photos/restaurants', 'PhotoController@restaurants');
 Route::get('/photos/exterior', 'PhotoController@exterior');
 
