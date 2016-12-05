@@ -18,7 +18,15 @@ body {
     color: white;
     z-index: 100;
 }
-.editStuff
+.addImage form {
+  margin: 70px auto;
+}
+.addImage form input {
+  margin-top: 20px;
+}
+.uploadBtn {
+  margin: 0 auto;
+}
 .editStuff div {
   height: 50px;
   background-color: red;

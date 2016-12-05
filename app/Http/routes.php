@@ -34,15 +34,30 @@ Route::get('/photos/apartmants/add', 'PhotoController@apartmants_add');
 Route::post('/photos/apartmants/save', 'PhotoController@apartmants_save');
 
 Route::get('/photos/restaurants', 'PhotoController@restaurants');
+Route::get('/photos/restaurants/add', 'PhotoController@restaurants_add');
+Route::post('/photos/restaurants/save', 'PhotoController@restaurants_save');
+
 Route::get('/photos/exterior', 'PhotoController@exterior');
+Route::get('/photos/exterior/add', 'PhotoController@exterior_add');
+Route::post('/photos/exterior/save', 'PhotoController@exterior_save');
+
 
 Route::get('/contact', 'HomeController@contact');
 Route::get('/services', 'HomeController@services');
 
 
 Route::get('/rooms/standard', 'RoomController@standard');
+Route::get('/rooms/standard/add', 'RoomController@standard_add');
+Route::post('/rooms/standard/save', 'RoomController@standard_save');
+
 Route::get('/rooms/superior', 'RoomController@superior');
+Route::get('/rooms/superior/add', 'RoomController@superior_add');
+Route::post('/rooms/superior/save', 'RoomController@superior_save');
+
 Route::get('/rooms/deluxe', 'RoomController@deluxe');
+Route::get('/rooms/deluxe/add', 'RoomController@deluxe_add');
+Route::post('/rooms/deluxe/save', 'RoomController@deluxe_save');
+
 Route::get('/rooms/catalog', 'RoomController@catalog');
 
 Route::get('/events/weddings', 'EventsController@wedding');
