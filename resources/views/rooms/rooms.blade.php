@@ -91,7 +91,16 @@
     </article>
   </a>
 </div>
+<br/>
+@if(Auth::user())
+
+<div>
+<a href="{{ url('/rooms/edit/1')}}" class="btn btn-danger" >
+  EDIT
+</a>
+</div>
 </section>
+@endif
 @endsection
 
 
@@ -99,12 +108,25 @@
   <section id="lifestyle-budget">
     <article class="row">
       <div class="col-md-12">
-        <a href="{{ url('/rooms/catalog') }}">
+        <a href="#">
           <h2>CJENOVNIK</h2><br/>
           <div>
-            VAŽI DO 21.1.2017
+            <form action="{{ URL::to('rooms/downloadPrice')}}" method="post" enctype="multipart/form-data">
+              <input type="submit" name="url" class="btn btn-success" value="Download">
+            </form>
           </div>
         </a>
+        <!-- @if(Auth::user())
+        <br>
+          <div>
+            <form action="{{ URL::to('rooms/uploadPrice')}}" method="post" enctype="multipart/form-data">
+              <label>Izaberite novi cjenovnik za upload</label>
+              <input type="file" class="" name="cjenovnik" id="cjenovnici">
+              <input type="submit" class="btn btn-danger" name="submitcjenovnik" value="Upload">
+              <input type="hidden" name="" value="{{ csrf_token() }}" name="_token">
+            </form>
+          </div>
+        @endif -->
       </div>
     </article>
   </section>

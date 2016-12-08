@@ -1184,14 +1184,14 @@ nav li a {
 }
 
 #oneAlbum {
-  background: url('../img/hotels/apartments/Hotel-104.jpg');
+  background: url('../img/Hotel-104.jpg');
   background-size: cover;
 }
 #twoAlbum {
-  background: url('../img/hotels/restaurants/Hotel-96.jpg');
+  background: url('../img/Hotel-96.jpg');
   background-size: cover;
 }#thrAlbum {
-  background: url('../img/hotels/exterior/Hotel-85.jpg');
+  background: url('../img/Hotel-85.jpg');
   background-size: cover;
 }
 

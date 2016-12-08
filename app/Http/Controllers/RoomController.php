@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Input;
 class RoomController extends Controller
 {
     public function standard(){
-      return view('rooms.standard');
+      $images = StandardRoom::all();
+      return view('rooms.standard', compact('images'));
     }
     public function standard_add(){
       return view('edits.standardRooms');
@@ -30,7 +31,8 @@ class RoomController extends Controller
 
 
     public function superior(){
-      return view('rooms.superior');
+      $images = SuperiorRoom::all();
+      return view('rooms.superior', compact('images'));
     }
     public function superior_add(){
       return view('edits.superiorRooms');
@@ -48,7 +50,8 @@ class RoomController extends Controller
 
 
     public function deluxe(){
-      return view('rooms.deluxe');
+      $images = DeluxeRoom::all();
+      return view('rooms.deluxe', compact('images'));
     }
     public function deluxe_add(){
       return view('edits.deluxeRooms');
@@ -69,13 +72,16 @@ class RoomController extends Controller
     }
     //en side
     public function standardEn(){
-      return view('en.rooms.standard');
+      $images = StandardRoom::all();
+      return view('en.rooms.standard', compact('images'));
     }
     public function superiorEn(){
-      return view('en.rooms.superior');
+      $images = SuperiorRoom::all();
+      return view('en.rooms.superior', compact('images'));
     }
     public function deluxeEn(){
-      return view('en.rooms.deluxe');
+      $images = DeluxeRoom::all();
+      return view('en.rooms.deluxe', compact('images'));
     }
     public function catalogEn(){
       return view('en.rooms.catalog');

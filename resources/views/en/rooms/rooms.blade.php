@@ -91,7 +91,16 @@
     </article>
   </a>
 </div>
+<br/>
+@if(Auth::user())
+
+<div>
+<a href="{{ url('/rooms/edit/1')}}" class="btn btn-danger" >
+  EDIT
+</a>
+</div>
 </section>
+@endif
 @endsection
 
 
@@ -99,10 +108,12 @@
   <section id="lifestyle-budget">
     <article class="row">
       <div class="col-md-12">
-        <a href="{{ url('/en/rooms/catalog') }}">
+        <a href="#">
           <h2>PRICE LIST</h2><br/>
           <div>
-            VALID UNTIL 21.1.2017
+            <form action="{{ URL::to('rooms/downloadPrice')}}" method="post" enctype="multipart/form-data">
+              <input type="submit" name="url" class="btn btn-success" value="Download">
+            </form>
           </div>
         </a>
       </div>

@@ -20,6 +20,9 @@ Route::post('home/save/{id}', 'HomeController@save');
 
 Route::get('/about', 'HomeController@about');
 Route::get('/rooms', 'HomeController@rooms');
+// Route::post('rooms/uploadPrice', 'HomeController@uploadPrice');
+Route::post('rooms/downloadPrice', 'HomeController@downloadPrice');
+
 Route::get('/rooms/edit/{id}', 'HomeController@rooms_edit');
 Route::post('/rooms/save/{id}', 'HomeController@rooms_save');
 
@@ -69,6 +72,8 @@ Route::get('/services/skiing', 'ServicesController@ski');
 Route::get('/services/golfing', 'ServicesController@golf');
 Route::get('/services/riding', 'ServicesController@ride');
 Route::get('/services/rafting', 'ServicesController@raft');
+
+Route::post('/sendform', 'MailController@send');
 
 
 //en Routes

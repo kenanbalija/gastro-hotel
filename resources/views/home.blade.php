@@ -106,28 +106,37 @@
          @endforeach
        </div>
         </div>
+      @if(Auth::user())
+        <div>
+        <a href="{{ url('/rooms/edit/1')}}" class="btn btn-danger" >
+          EDIT
+        </a>
+        </div>
+      @endif
   </section>
+
 @endsection
 
 @section('offer')
 <section id="booking">
   <h3>REZERVACIJE</h3>
     <div class="row">
-      <form action="/contact" method="post" enctype="text/plain">
-        <input class="col-xs-12" type="text" placeholder="Ime">
-        <input class="col-xs-12" type="text" placeholder="Prezime">
-        <input class="col-xs-12" type="email" placeholder="Email">
-        <input class="col-xs-12" type="number" placeholder="Broj">
-        <span class="col-xs-12">Datum prijave</span><input class="col-xs-12" type="date" value="2016-01-12">
-        <span class="xol-xs-12">Datum odjave</span><input class="col-xs-12" type="date" value="2016-01-12">
+      <form action="{{ url('/sendform') }}" method="post" enctype="multipart/form-data"  required>
+        <input name="firstname" class="col-xs-12" type="text" placeholder="Ime"  required>
+        <input name="lastname" class="col-xs-12" type="text" placeholder="Prezime"  required>
+        <input name="email" class="col-xs-12" type="email" placeholder="Email"  required>
+        <input name="phonenumber" class="col-xs-12" type="number" placeholder="Broj"  required>
+        <span class="col-xs-12">Datum prijave</span><input name="checkin" class="col-xs-12" type="date" value="2016-01-12"  required>
+        <span class="xol-xs-12">Datum odjave</span><input name="checkout" class="col-xs-12" type="date" value="2016-01-12"  required>
         <span class="col-xs-12">Vrsta sobe</span>
-        <select class="col-xs-12">
+        <select name="roomkind" class="col-xs-12">
           <option value="standard">Standardna soba</option>
           <option value="superior">Superior apartman</option>
           <option value="deluxe">Deluxe apartman</option>
         </select>
         <input class="col-xs-12 btn btn-success" type="submit" value="Rezerviši">
       </form>
+
     </div>
 </section>
 @endsection

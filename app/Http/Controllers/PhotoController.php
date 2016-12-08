@@ -34,7 +34,8 @@ class PhotoController extends Controller
 
 
     public function restaurants(){
-      return view('gallery.restaurants');
+      $images = RestoranGallery::all();
+      return view('gallery.restaurants', compact('images'));
     }
     public function restaurants_add(){
       return view('edits.restaurantsAdd');
@@ -52,7 +53,8 @@ class PhotoController extends Controller
 
 
     public function exterior(){
-      return view('gallery.exterior');
+      $images = EksterijerGallery::all();
+      return view('gallery.exterior', compact('images'));
     }
     public function exterior_add(){
       return view('edits.exteriorAdd');
@@ -70,12 +72,15 @@ class PhotoController extends Controller
 
     //en side
     public function apartmantsEn(){
-      return view('en.gallery.apartmants');
+      $images = ApartmanGallery::all();
+      return view('en.gallery.apartmants', compact('images'));
     }
     public function restaurantsEn(){
-      return view('en.gallery.restaurants');
+      $images = RestoranGallery::all();
+      return view('en.gallery.restaurants', compact('images'));
     }
     public function exteriorEn(){
-      return view('en.gallery.exterior');
+      $images = EksterijerGallery::all();
+      return view('en.gallery.exterior', compact('images'));
     }
 }

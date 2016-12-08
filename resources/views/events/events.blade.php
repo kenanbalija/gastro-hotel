@@ -43,6 +43,14 @@
       </div>
     </article>
   </div>
+  @if(Auth::user())
+
+  <div>
+  <a href="{{ url('/events/edit/1')}}" class="btn btn-danger" >
+    EDIT
+  </a>
+  </div>
+  @endif
 </section>
 
 @endsection
@@ -80,5 +88,13 @@
       </div>
     </article>
   </div>
+  @if(Auth::user())
+
+  <div>
+  <a href="{{ url('/services/edit/1')}}" class="btn btn-danger" >
+    EDIT
+  </a>
+  </div>
+  @endif
 </section>
 @endsection

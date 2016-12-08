@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/ekko-lightbox.min.css')}}">
+    <script src="//cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
 
 </head>
 <body id="app-layout">
@@ -50,7 +51,7 @@
       <div class="footer-copyright">
         <div>GastroID Hotel &#169; | Privacy policy</div>
         <div style="font-size: 8px;">All photographs are copyrighted by Ermin Okerić.</div>
-        <div style="font-size: 8px;">Web designed by Elvis Rudonja & Kenan Balija</div>
+        <div style="font-size: 10px;">Developed by Kenan Balija</div>
 
       </div>
     </footer>
@@ -72,11 +73,31 @@
     </script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6SQm2PPCry6AyQZhh8tTRPQMYmM1Bl4k&callback=initMap">
-  </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/ekko-lightbox.min.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'about' );
+        CKEDITOR.replace( 'aboutSub' );
+        CKEDITOR.replace( 'aboutEn' );
+        CKEDITOR.replace( 'aboutSubEn' );
+    </script>
+    <script>
+        CKEDITOR.replace( 'standard' );
+        CKEDITOR.replace( 'standardEn' );
+        CKEDITOR.replace( 'superior' );
+        CKEDITOR.replace( 'superiorEn' );
+        CKEDITOR.replace( 'deluxe' );
+        CKEDITOR.replace( 'deluxeEn' );
+    </script>
+    <script>
+        CKEDITOR.replace( 'meeting' );
+        CKEDITOR.replace( 'meetingEn' );
+        CKEDITOR.replace( 'service' );
+        CKEDITOR.replace( 'serviceEn' );
 
+    </script>
 </body>
 </html>

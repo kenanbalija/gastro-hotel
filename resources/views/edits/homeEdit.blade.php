@@ -20,7 +20,7 @@
           <input type="text" name="aboutSub" class="textovi" value="{{ $tekst->about_tekst_sub }}"><br/><br/>
           <input type="text" name="aboutEn" class="textovi" value="{{ $tekst->about_tekst_en }}"><br/><br/>
           <input type="text" name="aboutSubEn" class="textovi" value="{{ $tekst->about_tekst_sub_en }}"><br/><br/> -->
-          <input class=".btn-primary" type="submit" value="UPDATE">
+          <input class="btn btn-success" type="submit" value="UPDATE">
         </form>
     @endforeach
   </div>

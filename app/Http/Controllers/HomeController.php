@@ -7,7 +7,9 @@ use Request;
 use App\Text;
 use App\Room;
 use App\Event;
-
+use Input;
+use App\DownloadPrice;
+use Response;
 class HomeController extends Controller
 {
     /**
@@ -56,6 +58,18 @@ class HomeController extends Controller
     public function rooms(){
       $rooms = Room::all();
       return view('rooms/rooms', compact('rooms'));
+    }
+    //upload cjenovnik
+    // public function uploadPrice(){
+    //   if(Input::hasFile('cjenovnik')){
+    //     $file = Input::file('cjenovnik');
+    //     $file->move('uploads', $file->getClientOriginalName());
+    //     return redirect('/rooms');
+    //   }
+    // }
+    public function downloadPrice(){
+      $path = public_path()."/uploads/cjenovnik.pdf";
+      return Response::download($path);
     }
     public function rooms_edit($id){
       $rooms = Room::all();

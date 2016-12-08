@@ -11,7 +11,7 @@
 
       Image:<input type="file" name="img"><br/>
       <input type="hidden" name="_token" value="{{ csrf_token() }}">
-      <input type="submit" value="Submit">
+      <input class="btn btn-success" type="submit" value="Submit">
 
     </form>
   </div>

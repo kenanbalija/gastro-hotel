@@ -22,7 +22,7 @@
           <input type="text" name="superiorEn" class="textovi" value="{{ $room->superior_room_en }}"><br/><br/>
           <input type="text" name="deluxe" class="textovi" value="{{ $room->deluxe_room }}"><br/><br/>
           <input type="text" name="deluxeEn" class="textovi" value="{{ $room->deluxe_room_en }}"><br/><br/> -->
-          <input class=".btn-primary" type="submit" value="UPDATE">
+          <input class="btn btn-success" type="submit" value="UPDATE">
         </form>
     @endforeach
   </div>

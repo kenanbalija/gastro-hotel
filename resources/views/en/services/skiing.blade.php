@@ -7,9 +7,32 @@
 </section>
 @endsection
 @section('showcase')
-<section id="welcome">
-  <h1 style="text-align:center; font-size:60px; color:rgb(152,134,113);">THIS PART OF PAGE IS COMING SOON!!</h1>
+<section id="news">
+  <h3>SKIING</h3>
+  <div class="row">
+    <article id="events" class="col-xs-12">
+      <p>
+        Hotel by GastroID is offering to help organize excursions to
+        one of many mountains and ski resorts surronding Sarajevo.
+        Sarajevo was the host of XIV. Winter Olympic games in 1984 which is a
+        good reason to visit and enjoy one of our beautiful mountain resorts.
+      </p>
+      <p>
+        Hotel staff recommends visits to Bjelašnica, Jahorina, or
+        Ravna Gora based on what you wish to see and do on your trip.
+        Prices depend on the group size, price of ski
+        ticket, and whether you'll be needing a ski insctructor for beginners.
+      </p>
+      <p>
+        If you don't wish to try out one of winter sports,
+        but rather just spend a relaxing day you can always
+        enjoy hiking in the beautiful mountain surrounding, culinary
+        specialties, spa etc. Also, hotel can arrange transportation for
+        larger groups.
+      </p>
 
-
-</section>t
+      <p>Please contact us via e-mail hotel@gastroid.ba or by phone at 033 770-600 for more information.</p>
+    </article>
+  </div>
+</section>
 @endsection
