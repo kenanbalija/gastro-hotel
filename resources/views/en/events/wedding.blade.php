@@ -10,8 +10,11 @@
   <section id="news">
     <h3>WEDDING</h3>
     <div class="row">
+      @foreach($texts as $text)
+        {!! $text->weddingEn !!}
+      @endforeach
       <article id="events" class="col-xs-12">
-        <p>
+        <!-- <p>
           Hotel by GastroID is the perfect place to choose to celebrate your wedding as we will be
           there to provide assistance and support before and during the event. It will be our pleasure to
            fulfill your wishes for the special occasion.
@@ -42,7 +45,7 @@
         </p>
         <p>
           Please contact us via e-mail hotel@gastroid.ba or by phone at 033 770-600 for more information.
-        </p>
+        </p> -->
       </article>
     </div>
   </section>

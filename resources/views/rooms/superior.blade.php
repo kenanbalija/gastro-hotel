@@ -13,6 +13,8 @@
     @if(Auth::user())
 
     <a style="margin-bottom: 50px;padding-left:30px; color:rgb(27, 188, 155); font-weight: bolder;" href="{{ url('rooms/superior/add')}}"><button class="btn btn-success uploadBtn">UPLOAD</button><a>
+      <br/>
+      <br/>
       @endif
     <div class="row">
       @foreach($images as $img)

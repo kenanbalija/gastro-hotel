@@ -10,8 +10,18 @@
 <section id="news">
   <h3>ROĐENDANI I OSTALE ZABAVE</h3>
   <div class="row">
+    @if(Auth::user())
+      <div>
+      <a href="{{ url('/events/editOffer/1')}}" class="btn btn-danger" >
+        EDIT
+      </a>
+      </div>
+    @endif
     <article id="events" class="col-xs-12">
-      <p>
+      @foreach($texts as $text)
+        {!! $text->birthday !!}
+      @endforeach
+      <!-- <p>
         Hotel by GastroID nudi mogućnost organizacije proslave rođendana i
         svih ostalih zabava pri ćemu vam ljubazno osoblje hotela stoji na raspolaganju.
       </p>
@@ -34,7 +44,7 @@
         ovisi o Vašim željama i potrebama, stoga zvaničnu ponudu možete
         očekivati nakon razgovora s osobljem Hotela by GastroID.
       </p>
-      <p>Za više informacija, molimo Vas da kontaktirate hotel na e-mail hotel@gastroid.ba ili kontakt telefon 033 770-600. </p>
+      <p>Za više informacija, molimo Vas da kontaktirate hotel na e-mail hotel@gastroid.ba ili kontakt telefon 033 770-600. </p> -->
     </article>
   </div>
 </section>

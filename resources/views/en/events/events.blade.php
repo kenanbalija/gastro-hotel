@@ -88,7 +88,7 @@
   @if(Auth::user())
 
   <div>
-  <a href="{{ url('/services/edit/1')}}" class="btn btn-danger" >
+  <a href="{{ url('/events/edit/1')}}" class="btn btn-danger" >
     EDIT
   </a>
   </div>

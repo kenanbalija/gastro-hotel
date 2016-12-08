@@ -10,8 +10,18 @@
 <section id="news">
   <h3>TEAM BUILDING</h3>
   <div class="row">
+    @if(Auth::user())
+      <div>
+      <a href="{{ url('/events/editOffer/1')}}" class="btn btn-danger" >
+        EDIT
+      </a>
+      </div>
+    @endif
     <article id="events" class="col-xs-12">
-      <p>
+      @foreach($texts as $text)
+        {!! $text->teambuilding !!}
+      @endforeach
+      <!-- <p>
         Hotel by GastroID nudi mogućnost organizacije team building sastanaka
         za Vašu kompaniju i zaposlenike na bazi noćenja ili dnevnog boravka.
       </p>
@@ -38,7 +48,7 @@
       </p>
       <p>
         Za više informacija, molimo Vas da kontaktirate hotel na e-mail hotel@gastroid.ba ili kontakt telefon 033 770-600.
-      </p>
+      </p> -->
     </article>
   </div>
 </section>

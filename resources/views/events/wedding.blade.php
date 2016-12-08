@@ -10,8 +10,18 @@
 <section id="news">
   <h3>VJENČANJE</h3>
   <div class="row">
+    @if(Auth::user())
+      <div>
+      <a href="{{ url('/events/editOffer/1')}}" class="btn btn-danger" >
+        EDIT
+      </a>
+      </div>
+    @endif
     <article id="events" class="col-xs-12">
-      <p>
+      @foreach($texts as $text)
+        {!! $text->wedding !!}
+      @endforeach
+      <!-- <p>
         Hotel by GastroID nudi mogućnost organizacije proslave vjenčanja pri ćemu
          će ljubazno i iskusno osoblje hotela stajati na raspolaganju i pokušati
          ispuniti sve Vaše želje za taj poseban dan.
@@ -41,7 +51,7 @@
       <p>
         Za više informacija, molimo Vas da kontaktirate hotel na e-mail hotel@gastroid.ba
          ili kontakt telefon 033 770-600.
-      </p>
+      </p> -->
     </article>
   </div>
 

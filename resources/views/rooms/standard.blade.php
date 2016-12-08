@@ -13,6 +13,8 @@
     @if(Auth::user())
 
     <a style="margin-bottom: 50px;padding-left:30px; color:rgb(27, 188, 155); font-weight: bolder;" href="{{ url('rooms/standard/add')}}"><button class="btn btn-success uploadBtn">UPLOAD</button><a>
+      <br/>
+      <br/>
     @endif
     <div class="row">
       @foreach($images as $img)
@@ -21,6 +23,7 @@
             <div><img src="../img/rooms/standard/{{ $img->img }}" class="img-fluid"></div>
           </a>
         </div>
+
       @endforeach
       <!-- <div class="col-xs-12 col-sm-6 col-md-4">
         <a href="{{ asset('img/Hotel-140.jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">

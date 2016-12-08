@@ -13,6 +13,7 @@
 
 
 Route::auth();
+
 Route::get('/', 'HomeController@index' );
 Route::get('/home', 'HomeController@index');
 Route::get('/home/edit/{id}', 'HomeController@edit');
@@ -29,6 +30,9 @@ Route::post('/rooms/save/{id}', 'HomeController@rooms_save');
 Route::get('/events', 'HomeController@events');
 Route::get('/events/edit/{id}', 'HomeController@events_edit');
 Route::post('/events/save/{id}', 'HomeController@events_save');
+Route::get('/events/editOffer/{id}', 'EventsController@editOffer');
+Route::post('/events/saveOffer/{id}', 'EventsController@saveOffer');
+
 
 
 Route::get('/photos', 'HomeController@photos');
@@ -47,6 +51,10 @@ Route::post('/photos/exterior/save', 'PhotoController@exterior_save');
 
 Route::get('/contact', 'HomeController@contact');
 Route::get('/services', 'HomeController@services');
+Route::get('/services/edit/{id}', 'HomeController@services_edit');
+Route::post('/services/save/{id}', 'HomeController@services_save');
+Route::get('/services/editOffer/{id}', 'ServicesController@editOffer');
+Route::post('/services/saveOffer/{id}', 'ServicesController@saveOffer');
 
 
 Route::get('/rooms/standard', 'RoomController@standard');

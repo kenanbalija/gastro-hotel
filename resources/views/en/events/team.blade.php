@@ -10,8 +10,11 @@
 <section id="news">
   <h3>TEAM BUILDING</h3>
   <div class="row">
+    @foreach($texts as $text)
+      {!! $text->teambuildingEn !!}
+    @endforeach
     <article id="events" class="col-xs-12">
-      <p>
+      <!-- <p>
         You are welcomed to organize your company's team building at Hotel by
         GastroID, with the option of booking rooms or just organizing a one-day event.
       </p>
@@ -36,7 +39,7 @@
       </p>
       <p>
         Please contact us via e-mail hotel@gastroid.ba or by phone at 033 770-600 for more information.
-      </p>
+      </p> -->
     </article>
   </div>
 </section>

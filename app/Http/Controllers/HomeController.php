@@ -113,7 +113,9 @@ class HomeController extends Controller
         $eventInput = Request::all();
         Event::find($id)->update([
             'meetings'=> $eventInput['meeting'],
-            'services'=> $eventInput['service']
+            'meetingsEn'=> $eventInput['meetingEn'],
+            'services'=> $eventInput['service'],
+            'servicesEn'=> $eventInput['serviceEn']
           ]);
         return redirect('/events')->with('message', 'SUCCESS');
       } else {

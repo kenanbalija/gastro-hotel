@@ -10,8 +10,18 @@
 <section id="news">
   <h3>SKIJANJE</h3>
   <div class="row">
+    @if(Auth::user())
+      <div>
+      <a href="{{ url('/services/editOffer/1')}}" class="btn btn-danger" >
+        EDIT
+      </a>
+      </div>
+    @endif
     <article id="events" class="col-xs-12">
-      <p>
+      @foreach($texts as $text)
+        {!! $text->ski !!}
+      @endforeach
+      <!-- <p>
         Hotel by GastroID Vam može pomoći u organizaciji izleta na jednu od mnogobrojnih planina i
          ski resorta u okolici Sarajeva. U Sarajevu su održane XIV. Zimske olimpijske igre 1984.
           godine što je dovoljan razlog da posjetite predivne planine i sami se uvjerite u
@@ -31,7 +41,7 @@
          u probavanju kulinarskih specijaliteta, sanjkanju, itd. Takođe,
           omogućena je i organizacija prijevoza od strane hotela ukoliko su u pitanju veće grupe.
       </p>
-      <p>Za više informacija, molimo Vas da kontaktirate hotel na e-mail hotel@gastroid.ba ili kontakt telefon 033 770-600. </p>
+      <p>Za više informacija, molimo Vas da kontaktirate hotel na e-mail hotel@gastroid.ba ili kontakt telefon 033 770-600. </p> -->
     </article>
   </div>
 </section>

@@ -10,8 +10,11 @@
 <section id="news">
   <h3>BIRTHDAY CELEBRATIONS AND OTHER EVENTS</h3>
   <div class="row">
+    @foreach($texts as $text)
+      {!! $text->birthdayEn !!}
+    @endforeach
     <article id="events" class="col-xs-12">
-      <p>
+      <!-- <p>
         We are delighted to assist you in organizing a birthday celebration
         and all other party's at our hotel.
       </p>
@@ -34,11 +37,11 @@
       <p>
         Price of organizing a birthday party, business event and any other event
         or celebration depends on your wishes and needs, and therefore you can
-        expect a price estimate after consulting with our staff. 
+        expect a price estimate after consulting with our staff.
       </p>
       <p>
         Please contact us via e-mail hotel@gastroid.ba or by phone at 033 770-600 for more information.
-      </p>
+      </p> -->
     </article>
   </div>
 </section>

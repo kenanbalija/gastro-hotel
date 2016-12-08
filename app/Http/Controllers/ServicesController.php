@@ -2,35 +2,74 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Request;
 
+use App\serviceOffer;
 class ServicesController extends Controller
 {
   public function ski() {
-    return view('services.skiing');
+    $texts = serviceOffer::all();
+    return view('services.skiing', compact('texts'));
   }
   public function golf() {
-    return view('services.golfing');
+    $texts = serviceOffer::all();
+
+    return view('services.golfing', compact('texts'));
   }
   public function ride() {
-    return view('services.riding');
+    $texts = serviceOffer::all();
+
+    return view('services.riding', compact('texts'));
   }
   public function raft() {
-    return view('services.rafting');
+    $texts = serviceOffer::all();
+
+    return view('services.rafting', compact('texts'));
+  }
+  public function editOffer($id){
+    $texts = serviceOffer::all();
+    return view('edits.serviceOfferEdit', compact('texts'));
+  }
+  public function saveEvent($id){
+    if(Auth::check()){
+      $input = Request::all();
+      serviceOffer::find($id)->update(
+        ['ski' => $input['ski'],
+        'skiEn' => $input['skiEn'],
+        'golf' => $input['golf'],
+        'golfEn' => $input['golfEn'],
+        'ride' => $input['ride'],
+        'rideEn' => $input['rideEn'],
+        'raft' => $input['raft'],
+        'raftEn' => $input['raftEn']
+      ]);
+      return redirect('/')->with('message', 'SUCCESS');
+    } else {
+      return redirect('/')->with('message', 'LOG IN');
+    }
   }
   //en side
   public function skiEn() {
-    return view('en.services.skiing');
+    $texts = serviceOffer::all();
+
+    return view('en.services.skiing', compact('texts'));
   }
   public function golfEn() {
-    return view('en.services.golfing');
+    $texts = serviceOffer::all();
+
+    return view('en.services.golfing', compact('texts'));
   }
   public function rideEn() {
-    return view('en.services.riding');
+    $texts = serviceOffer::all();
+
+    return view('en.services.riding', compact('texts'));
   }
   public function raftEn() {
-    return view('en.services.rafting');
+    $texts = serviceOffer::all();
+
+    return view('en.services.rafting', compact('texts'));
   }
 }

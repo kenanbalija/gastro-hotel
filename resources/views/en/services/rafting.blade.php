@@ -10,8 +10,18 @@
 <section id="news">
   <h3>RAFTING</h3>
   <div class="row">
+    @if(Auth::user())
+      <div>
+      <a href="{{ url('/services/editOffer/1')}}" class="btn btn-danger" >
+        EDIT
+      </a>
+      </div>
+    @endif
     <article id="events" class="col-xs-12">
-      <p>
+      @foreach($texts as $text)
+        {!! $text->raftEn !!}
+      @endforeach
+      <!-- <p>
         Hotel by GastroID is offering to organize an excursion to one of many rivers in Bosnia and Herzegovina, where you
         can engage in different activities in the beautiful countryside, and
         if you wish to have a more active vacation we kindly recommend trying out rafting.
@@ -25,7 +35,7 @@
       <p>
         Prices depend on the group size and your individual needs, and you can expect an official estimate after consulting with our staff
       </p>
-      <p>Please contact us via e-mail hotel@gastroid.ba or by phone at 033 770-600 for more information.</p>
+      <p>Please contact us via e-mail hotel@gastroid.ba or by phone at 033 770-600 for more information.</p> -->
     </article>
   </div>
 </section>

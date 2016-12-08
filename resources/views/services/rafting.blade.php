@@ -10,8 +10,19 @@
 <section id="news">
   <h3>RAFTING</h3>
   <div class="row">
+    @if(Auth::user())
+      <div>
+      <a href="{{ url('/services/editOffer/1')}}" class="btn btn-danger" >
+        EDIT
+      </a>
+      </div>
+    @endif
+
     <article id="events" class="col-xs-12">
-      <p>
+      @foreach($texts as $text)
+        {!! $text->raft !!}
+      @endforeach
+      <!-- <p>
         Hotel by GastroID Vam nudi pomoć u organizaciji izleta na jednu od
         mnogobrojnih bosanskohercegovačkih rijeka gdje možete uživati u
         mnogobrojnim aktivnostima u prelijepom krajoliku, a ako ste
@@ -30,7 +41,7 @@
         te zvaničnu ponudu možete dobiti nakon razgovora s hotelskim osobljem
         koje Vam stoji na punom raspolaganju pri organizaciji izleta.
       </p>
-      <p>Za više informacija, molimo Vas da kontaktirate hotel na e-mail hotel@gastroid.ba ili kontakt telefon 033 770-600. </p>
+      <p>Za više informacija, molimo Vas da kontaktirate hotel na e-mail hotel@gastroid.ba ili kontakt telefon 033 770-600. </p> -->
     </article>
   </div>
 </section>

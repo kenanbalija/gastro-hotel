@@ -11,6 +11,5 @@ class Event extends Model
       'meetingsEn',
       'services',
       'servicesEn'
-
     ];
 }

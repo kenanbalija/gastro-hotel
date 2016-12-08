@@ -107,11 +107,16 @@
        </div>
         </div>
       @if(Auth::user())
+      <br/>
+      <br/>
+
         <div>
-        <a href="{{ url('/rooms/edit/1')}}" class="btn btn-danger" >
+        <a href="{{ url('/home/edit/1')}}" class="btn btn-danger" >
           EDIT
         </a>
         </div>
+        <br/>
+        
       @endif
   </section>
 
