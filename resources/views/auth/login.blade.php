@@ -6,7 +6,7 @@
 </section>
 @endsection
 @section('showcase')
-<div class="container"><a href="{{ url('/register') }}">REGISTER</a></div>
+<!-- <div class="container"><a href="{{ url('/register') }}">REGISTER</a></div> -->
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
