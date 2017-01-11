@@ -36,6 +36,12 @@ Route::post('/events/saveOffer/{id}', 'EventsController@saveOffer');
 
 
 Route::get('/photos', 'HomeController@photos');
+Route::post('/photos/save', 'PhotoController@save_gallery');
+Route::get('/photos/delete/{id}', 'PhotoController@delete_gallery');
+Route::get('/photos/view/{id}','PhotoController@view_gallery');
+Route::post('image/do-upload','PhotoController@do_image_upload');
+
+
 Route::get('/photos/apartmants', 'PhotoController@apartmants');
 Route::get('/photos/apartmants/add', 'PhotoController@apartmants_add');
 Route::post('/photos/apartmants/save', 'PhotoController@apartmants_save');
@@ -50,6 +56,9 @@ Route::post('/photos/exterior/save', 'PhotoController@exterior_save');
 
 
 Route::get('/contact', 'HomeController@contact');
+Route::get('/contact/edit/{id}', 'HomeController@contact_edit');
+Route::post('/contact/save/{id}', 'HomeController@contact_save');
+
 Route::get('/services', 'HomeController@services');
 Route::get('/services/edit/{id}', 'HomeController@services_edit');
 Route::post('/services/save/{id}', 'HomeController@services_save');

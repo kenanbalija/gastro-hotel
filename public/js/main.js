@@ -1,3 +1,13 @@
+// Dropzone.options.addImagess = {
+//   maxFilesize: 2,
+//   acceptedFiles: 'image/*',
+//   success: function(file, response){
+//     console.log('konan pustolov');
+//     console.log(file);
+//     console.log(response);
+//   }
+// };
+
 $(document).ready(function () {
     $(document).on('mouseenter', '.homeButton', function () {
         $('#aboutContainer').show('1000','linear', function () {});

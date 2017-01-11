@@ -14,27 +14,21 @@
     </section>
   </article>
   <article id="contact-info">
-    <section class=" col-xs-12 col-sm-4">
-      <h4>ADRESA:</h4>
-      <div><span>Nike Kolumbića - Šake 78</span><span>Sarajevo 71000</span><span>Bosna i Hercegovina</span></div>
-    </section>
-    <section class="col-xs-12 col-sm-4">
-      <h4>TEL:</h4>
-      <div><span>+387 33 770-600</span></div>
-    </section>
-    <section class="col-xs-12 col-sm-4">
-      <h4>E-MAIL:</h4>
-      <div><span>hotel@gastroid.ba</span></div>
-    </section>
-    <!-- <section class="col-xs-12">
-      <h4>MISCELLANEOUS INFORMATION:</h4>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-         Excepteur sint occaecat cupidatat non proident.</span>
-    </section> -->
+    @foreach($contacts as $cont)
+      {!! $cont->contact !!}
+    @endforeach
+    @if(Auth::user())
+    <br/>
+    <br/>
+
+      <div>
+      <a href="{{ url('/contact/edit/1')}}" class="btn btn-danger" >
+        EDIT
+      </a>
+      </div>
+      <br/>
+
+    @endif
   </article>
 </section>
 @endsection

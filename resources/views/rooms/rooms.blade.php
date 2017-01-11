@@ -12,11 +12,8 @@
   <div class="row">
     <a href="{{ url('/rooms/standard') }}">
       <article class="col-sm-12">
-      <div class="col-xs-12 col-md-6">
-        <section id="stnd-rooms"></section>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <h4>Standardne Sobe</h4>
+
+      <div class="col-xs-12 ">
         <div><!-- Standardne sobe sadrže LCD TV, mini-bar te kupaonicu sa besplatnim
            kozmetičkim priborom i fenom. Pomoćni ležajevi i dječji kreveti dostupni
             su na zahtjev. Možete birati između jednokrevetne, dvokrevetne
@@ -39,11 +36,7 @@
     <div class="row">
       <a href="{{ url('/rooms/superior') }}">
     <article class="col-sm-12">
-      <div class="col-xs-12 col-md-6">
-        <section id="sup-rooms"></section>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <h4>Superior apartman</h4>
+      <div class="col-xs-12 ">
         <div><!-- <Ovaj klimatizirani suite uključuje LCD TV sa satelitskim programima,
            prostor za sjedenje s kaučem na rasklapanje, mini bar i kupaonicu s
            besplatnim kozmetičkim priborom, sušilom za kosu te kadom. Također
@@ -66,11 +59,7 @@
   <div class="row">
   <a href="{{ url('/rooms/deluxe') }}">
     <article class="col-sm-12">
-      <div class="col-xs-12 col-md-6">
-        <section id="dlx-rooms"></section>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <h4>Deluxe apartman</h4>
+      <div class="col-xs-12 ">
         <div>
           <!-- Ovaj elegantno uređeni suite uključuje klima-uređaj, LCD TV sa satelitskim
           programima, DVD uređaj i prostrani dnevni boravak s kaminom.
@@ -99,8 +88,9 @@
   EDIT
 </a>
 </div>
-</section>
 @endif
+</section>
+
 @endsection
 
 
@@ -116,17 +106,7 @@
             </form>
           </div>
         </a>
-        <!-- @if(Auth::user())
-        <br>
-          <div>
-            <form action="{{ URL::to('rooms/uploadPrice')}}" method="post" enctype="multipart/form-data">
-              <label>Izaberite novi cjenovnik za upload</label>
-              <input type="file" class="" name="cjenovnik" id="cjenovnici">
-              <input type="submit" class="btn btn-danger" name="submitcjenovnik" value="Upload">
-              <input type="hidden" name="" value="{{ csrf_token() }}" name="_token">
-            </form>
-          </div>
-        @endif -->
+
       </div>
     </article>
   </section>

@@ -7,16 +7,15 @@ body {
   background-color: #f7f7f7;
 }
 #alert {
-    position: absolute;
-    top: 500px;
-    width: 500px;
-    margin: 0 auto;
-    background: green ;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
-    color: white;
-    z-index: 100;
+   position: fixed;
+   top: 200px;
+   width: 100%;
+   background: #f25f5c ;
+   text-align: center;
+   height: 50px;
+   line-height: 50px;
+   color: white;
+   z-index: 1001;
 }
 .addImage form {
   margin: 70px auto;
@@ -1148,11 +1147,12 @@ nav li a {
 }
 
 #photos .row div {
-  min-height: 250px;
+  max-height: 350px;
+  overflow: hidden;
   padding: 10px;
 }
 #photos .row div div {
-  background-color: #232323;
+  background-color: rgba(35, 35, 35, 0.06);
   border-radius: 3px;
 }
 #photos .row div div:hover  {
@@ -1194,15 +1194,22 @@ nav li a {
   background: url('../img/Hotel-85.jpg');
   background-size: cover;
 }
-
+#dropzoneImages {
+  position: relative;
+  margin-bottom: 50px;
+}
 h3 {
   font-size: 24px;
 }
+
 /* all media goes here */
 
 a:focus, a:hover {
   color: inherit;
 }
+
+
+
 @media screen and (max-width: 1080px) {
   #extra-bg {
     height: 80px;

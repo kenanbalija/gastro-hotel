@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Request;
-
+use Auth;
 use App\serviceOffer;
 class ServicesController extends Controller
 {
@@ -33,7 +33,7 @@ class ServicesController extends Controller
     $texts = serviceOffer::all();
     return view('edits.serviceOfferEdit', compact('texts'));
   }
-  public function saveEvent($id){
+  public function saveOffer($id){
     if(Auth::check()){
       $input = Request::all();
       serviceOffer::find($id)->update(

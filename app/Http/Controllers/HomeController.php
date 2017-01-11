@@ -7,6 +7,8 @@ use Request;
 use App\Text;
 use App\Room;
 use App\Event;
+use App\Contact;
+use App\Gallery;
 use Input;
 use App\DownloadPrice;
 use Response;
@@ -47,9 +49,12 @@ class HomeController extends Controller
           'about_tekst_en' => $input['aboutEn'],
           'about_tekst_sub_en' => $input['aboutSubEn']
         ]);
-        return redirect('/')->with('message', 'SUCCESS');
+        \Session::flash('flash_message', 'Uspjesno ste izmjenili podatke');
+        return redirect('/');
       } else {
-        return redirect('/')->with('message', 'LOG IN');
+        \Session::flash('flash_message', 'Logujte se');
+
+        return redirect('/');
       }
 
     }
@@ -87,8 +92,10 @@ class HomeController extends Controller
             'deluxe_room'=>$roomInput['deluxe'],
             'deluxe_room_en'=>$roomInput['deluxeEn']
           ]);
-        return redirect('/rooms')->with('message', 'SUCCESS');
+        \Session::flash('flash_message', 'Uspjesno ste izmjenili podatke');
+        return redirect('/rooms');
       } else {
+        \Session::flash('flash_message', 'Logujte se');
         return redirect('/rooms')->with('message', 'LOG IN');
       }
 
@@ -117,8 +124,12 @@ class HomeController extends Controller
             'services'=> $eventInput['service'],
             'servicesEn'=> $eventInput['serviceEn']
           ]);
-        return redirect('/events')->with('message', 'SUCCESS');
+          \Session::flash('flash_message', 'Uspjesno ste izmjenili podatke');
+
+        return redirect('/events');
       } else {
+        \Session::flash('flash_message', 'Logujte se');
+
         return redirect('/events')->with('message', 'LOG IN');
       }
 
@@ -126,11 +137,36 @@ class HomeController extends Controller
 
 
     public function contact(){
-      return view('contact.contact');
+      $contacts = Contact::all();
+
+      return view('contact.contact', compact('contacts'));
+    }
+    public function contact_edit($id){
+      $contacts = Contact::all();
+      return view('edits.contactEdit', compact('contacts'));
+    }
+
+    public function contact_save($id){
+      if(Auth::check()){
+        $contactInput = Request::all();
+        Contact::find($id)->update([
+          'contact'=> $contactInput['contact'],
+          'contactEn'=> $contactInput['contactEn']
+        ]);
+        \Session::flash('flash_message', 'Uspjesno ste izmjenili podatke');
+         return redirect('/contact');
+      }else {
+        \Session::flash('flash_message', 'Logujte se');
+
+        return redirect('/contact')->with('message', 'LOG IN');
+      }
     }
     public function photos(){
-      return view('gallery.photos');
+      $galleries = Gallery::all();
+      return view('gallery.photos')
+           ->with('galleries', $galleries);
     }
+
     public function services(){
       return view('services.services');
     }
@@ -154,10 +190,14 @@ class HomeController extends Controller
     }
 
     public function contactEn(){
-      return view('en.contact.contact');
+      $contacts = Contact::all();
+      return view('en.contact.contact', compact('contacts'));
     }
     public function photosEn(){
-      return view('en.gallery.photos');
+      $galleries = Gallery::all();
+
+      return view('en.gallery.photos')
+       ->with('galleries', $galleries);
     }
     public function servicesEn(){
       return view('en.services.services');

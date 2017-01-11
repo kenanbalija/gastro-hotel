@@ -99,8 +99,9 @@
   EDIT
 </a>
 </div>
-</section>
 @endif
+</section>
+
 @endsection
 
 

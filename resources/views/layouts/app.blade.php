@@ -12,20 +12,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/ekko-lightbox.min.css')}}">
-    <script src="//cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
-
+    <script src="//cdn.ckeditor.com/4.6.1/full/ckeditor.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body id="app-layout">
-  <!--
-  ADD LATER
-  @if(Session::has('message'))
-  <div id="alert">
-    {{ Session::get('message') }}
-  </div>
-  @endif -->
+
+  @if (Session::has('flash_message'))
+    <div id="alert">{{ Session::get('flash_message') }}</div>
+  @endif
     @yield('content')
     @yield('showcase')
     @yield('feature')
@@ -71,12 +70,21 @@
 
       }
     </script>
+
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6SQm2PPCry6AyQZhh8tTRPQMYmM1Bl4k&callback=initMap">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+               $("#alert").delay(3000).fadeOut(500);
+           });
+    </script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone-amd-module.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js'></script>
+
     <script src="{{ asset('js/ekko-lightbox.min.js') }}"></script>
     <script>
         CKEDITOR.replace( 'about' );
@@ -97,6 +105,10 @@
         CKEDITOR.replace( 'meetingEn' );
         CKEDITOR.replace( 'service' );
         CKEDITOR.replace( 'serviceEn' );
+    </script>
+    <script>
+        CKEDITOR.replace( 'contact' );
+        CKEDITOR.replace( 'contactEn' );
 
     </script>
 </body>

@@ -137,6 +137,7 @@
           <option value="deluxe">Deluxe apartmant</option>
         </select>
         <input class="col-xs-12 btn btn-success" type="submit" value="Reserve">
+        <div class="g-recaptcha" data-sitekey="6LcplQ8UAAAAAI04FXKGlzkEXXPgYM3VqbDrnPAQ"></div>
       </form>
     </div>
 </section>

@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'conanobalija@gmail.com', 'name' => 'Kenan'],
+    'from' => ['address' => 'rezervacije.gastroidhotel@gmail.com', 'name' => 'Nova Rezervacija'],
 
     /*
     |--------------------------------------------------------------------------

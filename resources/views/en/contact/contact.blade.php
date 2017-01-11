@@ -15,18 +15,21 @@
     </section>
   </article>
   <article id="contact-info">
-    <section class=" col-xs-12 col-sm-4">
-      <h4>ADDRESS:</h4>
-      <div><span>Nike Kolumbića - Šake 78</span><span>Sarajevo 71000</span><span>Bosnia and Herzegovina</span></div>
-    </section>
-    <section class="col-xs-12 col-sm-4">
-      <h4>TEL:</h4>
-      <div><span>+387 33 770-600</span></div>
-    </section>
-    <section class="col-xs-12 col-sm-4">
-      <h4>E-MAIL:</h4>
-      <div><span>hotel@gastroid.ba</span></div>
-    </section>
+    @foreach($contacts as $cont)
+      {!! $cont->contactEn !!}
+    @endforeach
+    @if(Auth::user())
+    <br/>
+    <br/>
+
+      <div>
+      <a href="{{ url('/contact/edit/1')}}" class="btn btn-danger" >
+        EDIT
+      </a>
+      </div>
+      <br/>
+
+    @endif
   </article>
 </section>
 @endsection
@@ -48,6 +51,7 @@
         <option value="deluxe">Deluxe apartmant</option>
       </select>
       <input class="col-xs-12 btn btn-success" type="submit" value="Reserve">
+      <div class="g-recaptcha" data-sitekey="6LcplQ8UAAAAAI04FXKGlzkEXXPgYM3VqbDrnPAQ"></div>
     </form>
   </div>
 </section>

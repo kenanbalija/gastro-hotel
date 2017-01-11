@@ -116,7 +116,7 @@
         </a>
         </div>
         <br/>
-        
+
       @endif
   </section>
 
@@ -139,7 +139,8 @@
           <option value="superior">Superior apartman</option>
           <option value="deluxe">Deluxe apartman</option>
         </select>
-        <input class="col-xs-12 btn btn-success" type="submit" value="Rezerviši">
+        <input class="col-xs-12 btn btn-success" type="submit" data-toggle="modal" value="Rezerviši">
+        <div class="g-recaptcha" data-sitekey="6LcplQ8UAAAAAI04FXKGlzkEXXPgYM3VqbDrnPAQ"></div>
       </form>
 
     </div>
